@@ -574,20 +574,20 @@ public class DCAFixerAnalyzer {
 			throws IOException, WalaException, CancelException, InvalidClassFileException {
 
 		// Test TA step: perform the analysis, then print APs.
-		String appSrc = "/Users/Dareen/NetBeansProjects/smallBank/src/TSet/StringsExample.java";
-//				"/Users/Dareen/NetBeansProjects/smallBank/src/TSet/PaperExample_vul.java";
-//				"/Users/Dareen/NetBeansProjects/smallBank/src/smallbank/PaperExample_vul.java"; 
-//				"/Users/Dareen/NetBeansProjects/smallBank/src/smallbank/StringsExample.java";
-//		"/Users/Dareen/NetBeansProjects/smallBank/src/TSet/PaperExample_vul.java";
-//		 "/Users/Dareen/NetBeansProjects/smallBank/src/TSet/PW_sec.java";
-//				"/Users/Dareen/NetBeansProjects/smallBank/src/TSet/PWstr_vul_d.java";
-//		 "/Users/Dareen/NetBeansProjects/smallBank/src/TSet/PWstr_vul_h.java";
-		// "/Users/Dareen/NetBeansProjects/smallBank/src/TSet/SQLIV_q_s_all.java";
-		// "/Users/Dareen/NetBeansProjects/smallBank/src/TSet/SQLIV_q_s_t_cv_SEC.java";
-		// "/Users/Dareen/NetBeansProjects/smallBank/src/TSet/SQLIV_q_s_t_cv.java";
-		// "/Users/Dareen/NetBeansProjects/smallBank/src/TSet/SQLIV_q_s_v.java";
+		String appSrc = "/Users/dpc100/NetBeansProjects/smallBank/src/TSet/StringsExample.java";
+//				"/Users/dpc100/NetBeansProjects/smallBank/src/TSet/PaperExample_vul.java";
+//				"/Users/dpc100/NetBeansProjects/smallBank/src/smallbank/PaperExample_vul.java"; 
+//				"/Users/dpc100/NetBeansProjects/smallBank/src/smallbank/StringsExample.java";
+//		"/Users/dpc100/NetBeansProjects/smallBank/src/TSet/PaperExample_vul.java";
+//		 "/Users/dpc100/NetBeansProjects/smallBank/src/TSet/PW_sec.java";
+//				"/Users/dpc100/NetBeansProjects/smallBank/src/TSet/PWstr_vul_d.java";
+//		 "/Users/dpc100/NetBeansProjects/smallBank/src/TSet/PWstr_vul_h.java";
+		// "/Users/dpc100/NetBeansProjects/smallBank/src/TSet/SQLIV_q_s_all.java";
+		// "/Users/dpc100/NetBeansProjects/smallBank/src/TSet/SQLIV_q_s_t_cv_SEC.java";
+		// "/Users/dpc100/NetBeansProjects/smallBank/src/TSet/SQLIV_q_s_t_cv.java";
+		// "/Users/dpc100/NetBeansProjects/smallBank/src/TSet/SQLIV_q_s_v.java";
 
-		String appJar = "/Users/Dareen/Fixer/Experiments/TrainingCases/smallbank.jar";
+		String appJar = "/Users/dpc100/Fixer/Experiments/TrainingCases/smallbank.jar";
 		String[] subpath = appSrc.split("/");
 		String appSrc_folder = subpath[subpath.length - 2] + "/";
 		String appSrc_CName = (subpath[subpath.length - 1].split("\\."))[0];
