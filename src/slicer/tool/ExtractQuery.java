@@ -1282,17 +1282,17 @@ public static String Extractor(String basePath, String fileName, int n) throws I
 		String app_rs = "";
 		String app_sql = "";
 		//
-//		File file = new File("/Users/Dareen/Fixer/tmp/TSet/Slices/SQLIV/q_s_v/q_s_v_vul.java");
-		File file = new File("/Users/Dareen/Desktop/DCAFixer_Experimets/hibernate-orm-main/hibernate-testing/src/main/java/org/hibernate/testing/cleaner/OracleDatabaseCleaner.java");
-		String path = "/Users/Dareen/Desktop/DCAFixer_Experimets/hibernate-orm-main/hibernate-testing/src/main/java/org/hibernate/testing/cleaner";
+//		File file = new File("/Users/dpc100/Fixer/tmp/TSet/Slices/SQLIV/q_s_v/q_s_v_vul.java");
+		File file = new File("/Users/dpc100/Desktop/DCAFixer_Experimets/hibernate-orm-main/hibernate-testing/src/main/java/org/hibernate/testing/cleaner/OracleDatabaseCleaner.java");
+		String path = "/Users/dpc100/Desktop/DCAFixer_Experimets/hibernate-orm-main/hibernate-testing/src/main/java/org/hibernate/testing/cleaner";
 //		String fileName = "q_s_v_vul.java";
 //		String fileName = "OracleDatabaseCleaner.java";
 //		String q = Extractor_no_comments(path, fileName, 2);
 //		QParser.parse_query(q, true,null);
-//		System.out.println("Extractor:\n"+ Extractor("/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/Online-Book-Store-System-master/src/workspace", "bookshop.java", 1020));
-		//System.out.println("Extractor:\n"+ Extractor("/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/TFG_PC-master/src/Data/Clases", "Imagen.java", 1020));
+//		System.out.println("Extractor:\n"+ Extractor("/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/Online-Book-Store-System-master/src/workspace", "bookshop.java", 1020));
+		//System.out.println("Extractor:\n"+ Extractor("/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/TFG_PC-master/src/Data/Clases", "Imagen.java", 1020));
 //		printAll();
-		System.out.println("Extractor:\n"+ Extractor("/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/TFG_PC-master/src/Data/Clases","Articulo.java", 0));
+		System.out.println("Extractor:\n"+ Extractor("/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/TFG_PC-master/src/Data/Clases","Articulo.java", 0));
 		printAll();
 
 		//   executeUpdate @ Delete @ 211
@@ -1301,12 +1301,12 @@ public static String Extractor(String basePath, String fileName, int n) throws I
 //		public static List<AssignExpInfo> assignListCalls = new ArrayList<>();
 //		public static List<MethodInfo> methodsList = new ArrayList<>();
 		
-//		/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/TFG_PC-master/src/Data/Data.java
+//		/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/TFG_PC-master/src/Data/Data.java
 
 //		
-//		System.out.println("Extractor_no_comments:\n"+Extractor_no_comments("/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/Online-Book-Store-System-master/src/workspace", "bookshop.java", 0));
+//		System.out.println("Extractor_no_comments:\n"+Extractor_no_comments("/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/Online-Book-Store-System-master/src/workspace", "bookshop.java", 0));
 		
-//		System.out.println("exp1Extractor:\n"+ exp1Extractor("/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/Online-Book-Store-System-master/src/workspace", "bookshop.java", 0));
+//		System.out.println("exp1Extractor:\n"+ exp1Extractor("/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/Online-Book-Store-System-master/src/workspace", "bookshop.java", 0));
 //		String q = Extractor_no_comments(path, fileName, 2);
 //		Extractor(path, fileName, 2);
 		
