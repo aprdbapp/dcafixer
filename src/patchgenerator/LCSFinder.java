@@ -16,7 +16,7 @@ import spoon.reflect.declaration.CtType;
 
 /**
  *
- * @author Dareen
+ * @author dpc100
  */
 public class LCSFinder {
     public static int comput_lcsLength(String path1, String path2) throws Exception{
@@ -44,8 +44,8 @@ public class LCSFinder {
         return tl.size();
     }
      public static void main(String[] args) throws Exception {
-         String appSrc_path = "/Users/Dareen/NetBeansProjects/smallBank/src/TSet/";
-        String path1 = "/Users/Dareen/Fixer/tmp/TSet/Slices/SQLIV/";
+         String appSrc_path = "/Users/dpc100/NetBeansProjects/smallBank/src/TSet/";
+        String path1 = "/Users/dpc100/Fixer/tmp/TSet/Slices/SQLIV/";
         
         comput_lcsLength(path1+"vvv.java",path1+"xxx1.java");
          comput_lcsLength(path1+"vvv.java",path1+"xxx2.java");
