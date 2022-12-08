@@ -18,4 +18,8 @@ https://github.com/rohanpadhye/JQF
 
 For further testing you can use 
 
-Wireshark & jmap
+- Wireshark 
+https://www.wireshark.org/
+
+- jmap
+https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr014.html
