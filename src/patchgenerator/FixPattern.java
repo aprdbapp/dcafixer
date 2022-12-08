@@ -46,7 +46,7 @@ import static spoon.testing.utils.ModelUtils.createFactory;
 
 /**
  *
- * @author dpc100n
+ * @author dpc100
  */
 public class FixPattern {
 
@@ -107,7 +107,7 @@ import static spoon.testing.utils.ModelUtils.createFactory;
 
 /**
  *
- * @author dpc100n
+ * @author dpc100
  */
 public class FixPattern {
 
@@ -202,12 +202,12 @@ public class FixPattern {
     }
 
     public static void main(String[] args) throws Exception {
-//        File f1 = new File("/Users/dpc100n/Fixer/Experiments/TrainingCases/example_2/slices/CV1_vul_slice_0.java");
-//        File f2 = new File("/Users/dpc100n/Fixer/Experiments/TrainingCases/example_2/slices/CV1_01_slice_0.java");
-//        File f1 = new File("/Users/dpc100n/NetBeansProjects/smallBank/src/smallbank/PaperExample_vul.java");
-        String f1_path = "/Users/dpc100n/NetBeansProjects/smallBank/src/smallbank/diff_examples/PS.java";
+//        File f1 = new File("/Users/dpc100/Fixer/Experiments/TrainingCases/example_2/slices/CV1_vul_slice_0.java");
+//        File f2 = new File("/Users/dpc100/Fixer/Experiments/TrainingCases/example_2/slices/CV1_01_slice_0.java");
+//        File f1 = new File("/Users/dpc100/NetBeansProjects/smallBank/src/smallbank/PaperExample_vul.java");
+        String f1_path = "/Users/dpc100/NetBeansProjects/smallBank/src/smallbank/diff_examples/PS.java";
         File f1 = new File(f1_path);
-        File f2 = new File("/Users/dpc100n/NetBeansProjects/smallBank/src/smallbank/diff_examples/PS_withFin_and_stmt.java");
+        File f2 = new File("/Users/dpc100/NetBeansProjects/smallBank/src/smallbank/diff_examples/PS_withFin_and_stmt.java");
 
         final SpoonGumTreeBuilder scanner = new SpoonGumTreeBuilder();
         //SpoonResource resource = SpoonResourceHelper.createResource(f1);
@@ -277,7 +277,7 @@ public class FixPattern {
       
         System.out.println("\n************************\n");
 //         TreeSerializer ts = TreeIoUtils.toJson(code_context);
-//         Writer output = new FileWriter("/Users/dpc100n/Documents/output100.txt");
+//         Writer output = new FileWriter("/Users/dpc100/Documents/output100.txt");
 //
 //         ts.writeTo(output);
 //         CtElement ancestor = result.commonAncestor();
@@ -413,12 +413,12 @@ w JDTBasedSpoonCompiler(factory);
     }
 
     public static void main(String[] args) throws Exception {
-//        File f1 = new File("/Users/dpc100n/Fixer/Experiments/TrainingCases/example_2/slices/CV1_vul_slice_0.java");
-//        File f2 = new File("/Users/dpc100n/Fixer/Experiments/TrainingCases/example_2/slices/CV1_01_slice_0.java");
-//        File f1 = new File("/Users/dpc100n/NetBeansProjects/smallBank/src/smallbank/PaperExample_vul.java");
-        String f1_path = "/Users/dpc100n/NetBeansProjects/smallBank/src/smallbank/diff_examples/PS.java";
+//        File f1 = new File("/Users/dpc100/Fixer/Experiments/TrainingCases/example_2/slices/CV1_vul_slice_0.java");
+//        File f2 = new File("/Users/dpc100/Fixer/Experiments/TrainingCases/example_2/slices/CV1_01_slice_0.java");
+//        File f1 = new File("/Users/dpc100/NetBeansProjects/smallBank/src/smallbank/PaperExample_vul.java");
+        String f1_path = "/Users/dpc100/NetBeansProjects/smallBank/src/smallbank/diff_examples/PS.java";
         File f1 = new File(f1_path);
-        File f2 = new File("/Users/dpc100n/NetBeansProjects/smallBank/src/smallbank/diff_examples/PS_withFin_and_stmt.java");
+        File f2 = new File("/Users/dpc100/NetBeansProjects/smallBank/src/smallbank/diff_examples/PS_withFin_and_stmt.java");
 
         final SpoonGumTreeBuilder scanner = new SpoonGumTreeBuilder();
         //SpoonResource resource = SpoonResourceHelper.createResource(f1);
@@ -488,7 +488,7 @@ w JDTBasedSpoonCompiler(factory);
       
         System.out.println("\n************************\n");
 //         TreeSerializer ts = TreeIoUtils.toJson(code_context);
-//         Writer output = new FileWriter("/Users/dpc100n/Documents/output100.txt");
+//         Writer output = new FileWriter("/Users/dpc100/Documents/output100.txt");
 //
 //         ts.writeTo(output);
 //         CtElement ancestor = result.commonAncestor();
