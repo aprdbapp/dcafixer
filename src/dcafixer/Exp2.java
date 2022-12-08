@@ -23,8 +23,8 @@ import slicer.tool.ExtractQuery;
 import slicer.tool.Info;
 import slicer.tool.SlicerTool;
 import slicer.utilities.StrUtil;
-
-public class Experiment2_FL_Detection {
+//Experiment2_FL_Detection
+public class  Exp2 {
 //	static boolean Print = false;
 	//==============
 	static int GFailedButSigned = 0;// sig is NOT null but parser failed
@@ -215,9 +215,9 @@ public class Experiment2_FL_Detection {
 
 		for(Info info : ExtractQuery.infoSet) {
 			
-		//	--------------- 2.1)	slice check that query is complete, path: /Users/Dareen/Fixer/tmp/TSet/Slices/AppVSlice =================
+		//	--------------- 2.1)	slice check that query is complete, path: /Users/dpc100/Fixer/tmp/TSet/Slices/AppVSlice =================
 			int v_lno = info.getLno();
-			String slices_and_context_path ="/Users/Dareen/Desktop/DCAFixer_Experimets/Slices/"+projName;
+			String slices_and_context_path ="/Users/dpc100/Desktop/DCAFixer_Experimets/Slices/"+projName;
 			String md_file = "/"+file_name.replace(".java", "")+"_md.txt";
 			String v_slice_file = "/"+file_name.replace(".java", "")+v_lno+"_VSlice.java";
 			String v_context_file = "/"+file_name.replace(".java", "")+"_context.txt";
@@ -463,13 +463,13 @@ public class Experiment2_FL_Detection {
 	}
 	
 	public static void main(String[] args) throws Exception {
-		String CsvDir = "/Users/Dareen/Desktop/DCAFixer_Experimets/Csv_files/";
+		String CsvDir = "/Users/dpc100/Desktop/DCAFixer_Experimets/Csv_files/";
 		int N, P;
 		 long start = System.currentTimeMillis();
-//		String proj1Src= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/banking-app-devkala48-master/src";
-////		String proj1Jar= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/banking-app.jar";
-//		String proj1Jar= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/banking-app-devkala48-masterjar.jar";
-////				"/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/temp/com/revature/banking_app.jar";
+//		String proj1Src= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/banking-app-devkala48-master/src";
+////		String proj1Jar= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/banking-app.jar";
+//		String proj1Jar= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/banking-app-devkala48-masterjar.jar";
+////				"/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/temp/com/revature/banking_app.jar";
 //		String proj1Csv = CsvDir + "banking-app.csv";
 //		 P= 4; N = 11;		
 //		Experimnet2_PIs.analyze_project(proj1Jar, proj1Src, proj1Csv, false, P, N);
@@ -481,8 +481,8 @@ public class Experiment2_FL_Detection {
 //		}
 		
 		// XX ---------------------- "banking-app"  ----------------
-//		String proj1Src= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/banking-app-devkala48-master/src";
-//		String proj1Jar= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/banking-app.jar";
+//		String proj1Src= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/banking-app-devkala48-master/src";
+//		String proj1Jar= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/banking-app.jar";
 //		String proj1Csv = CsvDir + "banking-app.csv";
 //		P= 4; N = 11; 
 //		Experimnet2_PIs.analyze_project(proj1Jar, proj1Src, proj1Csv, false, P, N);
@@ -494,9 +494,9 @@ public class Experiment2_FL_Detection {
 //		print_all_results(proj1Name);
 		
 		// XX ---------------------- BookStore ----------------
-//		String proj2Src= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/Online-Book-Store-System-master/src/workspace";
-//		String proj2Jar= //"/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/BookStore.jar";
-//				"/Users/Dareen/Fixer/Experiments/JARS/Online-Book-Store-System-master.jar";
+//		String proj2Src= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/Online-Book-Store-System-master/src/workspace";
+//		String proj2Jar= //"/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/BookStore.jar";
+//				"/Users/dpc100/Fixer/Experiments/JARS/Online-Book-Store-System-master.jar";
 //		String proj2Csv = CsvDir + "BookStore.csv";
 //		P= 46; N = 0;
 //		String proj2Name = "BookStore";
@@ -508,9 +508,9 @@ public class Experiment2_FL_Detection {
 //		print_all_results(proj2Name);
 		
 		// XX UNREACHABLE ---------------------- crawledemo_property ---------------- it has a syntax error
-//		/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/crawledemo-master/property/
-//		String proj3Src= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/crawledemo-master/property/src/com/property";
-//		String proj3Jar= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/crawledemo_property.jar";
+//		/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/crawledemo-master/property/
+//		String proj3Src= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/crawledemo-master/property/src/com/property";
+//		String proj3Jar= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/crawledemo_property.jar";
 //		String proj3Csv = CsvDir + "crawledemo_property.csv";
 //		P= 3; N = 0; 
 //		String proj3Name = "crawledemo_property";
@@ -522,9 +522,9 @@ public class Experiment2_FL_Detection {
 //		print_all_results(proj3Name);
 		
 		// XX UNREACHABLE , but w/ AllApplicationEntrypoints it's Line ---------------------- Ecomerce ----------------
-//		String proj4Src= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/Ecomerce--master/Ecomerce/src/ecomerce";
-//		String proj4Jar= //"/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/Ecomerce.jar";
-//				"/Users/Dareen/Fixer/Experiments/JARS/Ecomerce.jar";
+//		String proj4Src= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/Ecomerce--master/Ecomerce/src/ecomerce";
+//		String proj4Jar= //"/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/Ecomerce.jar";
+//				"/Users/dpc100/Fixer/Experiments/JARS/Ecomerce.jar";
 //		String proj4Csv = CsvDir + "Ecomerce.csv";
 //		P= 79; N = 15;
 //		String proj4Name = "Ecomerce";
@@ -536,8 +536,8 @@ public class Experiment2_FL_Detection {
 //		print_all_results(proj4Name);
 
 		// XX Line then (find_targeted_method )finding method "run" , nested classes ---------------------- fiftyfiftystockscreener ----------------
-//		String proj5Src= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/fiftyfiftystockscreener-master/src/com/eddiedunn";
-//		String proj5Jar= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/fiftyfiftystockscreener.jar";
+//		String proj5Src= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/fiftyfiftystockscreener-master/src/com/eddiedunn";
+//		String proj5Jar= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/fiftyfiftystockscreener.jar";
 //		String proj5Csv = CsvDir + "fiftyfiftystockscreener.csv";
 //		P= 32; N = 4; 
 //
@@ -551,8 +551,8 @@ public class Experiment2_FL_Detection {
 		
 
 		// UNREACHABLE , with All line! ---------------------- GUI-DBMS ----------------
-//		String proj6Src= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/GUI-DBMS-master/TableEasy/src/tableeasy";
-//		String proj6Jar= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/GUI-DBMS.jar";
+//		String proj6Src= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/GUI-DBMS-master/TableEasy/src/tableeasy";
+//		String proj6Jar= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/GUI-DBMS.jar";
 //		String proj6Csv = CsvDir + "GUI-DBMS.csv";
 //		P= 33; N = 20; 
 //		String proj6Name = "GUI-DBMS";
@@ -565,8 +565,8 @@ public class Experiment2_FL_Detection {
 
 
 		// UNREACHABLE or endless loop ----------------------  InventarioWeb  ----------------
-//		String proj7Src= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/InventarioWeb-master/src/java";
-//		String proj7Jar= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/InventarioWeb.jar";
+//		String proj7Src= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/InventarioWeb-master/src/java";
+//		String proj7Jar= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/InventarioWeb.jar";
 //		String proj7Csv = CsvDir + "InventarioWeb.csv";
 //		P= 1; N = 31; 
 //		
@@ -579,12 +579,12 @@ public class Experiment2_FL_Detection {
 //		print_all_results(proj7Name);
 		
 		// Done ---------------------- JavaGit-master ----------------
-//		String appJar = "/Users/Dareen/Fixer/Experiments/JARS/JavaGit-master.jar";
-//		String appSrc = "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/JavaGit-master/src/gs/veepeek/assessment/Assesment.java";
+//		String appJar = "/Users/dpc100/Fixer/Experiments/JARS/JavaGit-master.jar";
+//		String appSrc = "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/JavaGit-master/src/gs/veepeek/assessment/Assesment.java";
 //		String classPath = "gs/veepeek/assessment/Assesment";
 //
-//		String proj8Src = "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/JavaGit-master/src";
-//		String proj8Jar = "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/JavaGit-master.jar";
+//		String proj8Src = "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/JavaGit-master/src";
+//		String proj8Jar = "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/JavaGit-master.jar";
 //		String proj8Csv = CsvDir + "JavaGit-master.csv";
 //		P = 2;
 //		N = 1;
@@ -596,8 +596,8 @@ public class Experiment2_FL_Detection {
 //		print_all_results(proj8Name);
 		//------------------------------------------
 		// UNREACHABLE Or line---------------------- mariadb ----------------
-//				String proj9Src= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/mariadb-connector-j-master/src";
-//				String proj9Jar= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/mariadb.jar";
+//				String proj9Src= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/mariadb-connector-j-master/src";
+//				String proj9Jar= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/mariadb.jar";
 //				String proj9Csv = CsvDir + "mariadb.csv";
 //				P= 18; N = 1744; 
 //				String proj9Name = "mariadb";
@@ -608,8 +608,8 @@ public class Experiment2_FL_Detection {
 //				print_all_results(proj9Name);
 
 		// w/ all failed to find line (222) method ----------XXXX------------ TFG_PC-master ----------------
-//		String proj10Src= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/TFG_PC-master/src";
-//		String proj10Jar= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/TFG_PC-master.jar";
+//		String proj10Src= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/TFG_PC-master/src";
+//		String proj10Jar= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/TFG_PC-master.jar";
 //		String proj10Csv = CsvDir + "TFG_PC-master.csv";
 //		P= 77; N = 1;
 //		Experimnet2_PIs.analyze_project(proj10Jar, proj10Src, proj10Csv, false, P, N); 
@@ -623,8 +623,8 @@ public class Experiment2_FL_Detection {
 		// UNREACHABLE or LONG LOOP w/ all---------------------- DCA_bookstore ----------------
 //		
 //		String projCsv;
-//		String proj01Src= "/Users/Dareen/NetBeansProjects/DCAFixer_bookstore2/src"; 
-//		String proj01Jar= "/Users/Dareen/NetBeansProjects/DCAFixer_bookstore2/dist/DCAFixer_bookstore2.jar";
+//		String proj01Src= "/Users/dpc100/NetBeansProjects/DCAFixer_bookstore2/src"; 
+//		String proj01Jar= "/Users/dpc100/NetBeansProjects/DCAFixer_bookstore2/dist/DCAFixer_bookstore2.jar";
 //		projCsv = CsvDir +"DCA_bookstore.csv";
 //		P= 1; N = 5;
 //
@@ -637,8 +637,8 @@ public class Experiment2_FL_Detection {
 
 		// UNREACHABLE or LONG LOOP w/ all ---------------------- DCA_NewsPaper ----------------
 		
-//		String proj02Src= "/Users/Dareen/NetBeansProjects/DCAFixer_NewsPaper/src/dcafixer_newspaper";
-//		String proj02Jar= "/Users/Dareen/NetBeansProjects/DCAFixer_NewsPaper/dist/DCAFixer_NewsPaper.jar";
+//		String proj02Src= "/Users/dpc100/NetBeansProjects/DCAFixer_NewsPaper/src/dcafixer_newspaper";
+//		String proj02Jar= "/Users/dpc100/NetBeansProjects/DCAFixer_NewsPaper/dist/DCAFixer_NewsPaper.jar";
 //		String proj02Csv = CsvDir + "DCA_NewsPaper.csv";
 //		P= 5; N =9; 
 //		String proj02Name = "DCA_NewsPaper";
@@ -649,8 +649,8 @@ public class Experiment2_FL_Detection {
 //		print_all_results(proj02Name);
 //		
 		// UNREACHABLE or LONG LOOP w/ all ---------------------- DCA_FuelOrders ----------------
-//		String proj03Src= "/Users/Dareen/NetBeansProjects/DCAFixer_FuelOrdersClient/src/fuelordersclient"; 
-//		String proj03Jar= "/Users/Dareen/NetBeansProjects/DCAFixer_FuelOrdersClient/dist/DCAFixer_FuelOrdersClient2.jar";
+//		String proj03Src= "/Users/dpc100/NetBeansProjects/DCAFixer_FuelOrdersClient/src/fuelordersclient"; 
+//		String proj03Jar= "/Users/dpc100/NetBeansProjects/DCAFixer_FuelOrdersClient/dist/DCAFixer_FuelOrdersClient2.jar";
 //		String proj03Csv = CsvDir + "DCA_FuelOrders.csv";
 //		P= 5; N = 2; 
 //
@@ -662,8 +662,8 @@ public class Experiment2_FL_Detection {
 //		print_all_results(proj03Name);
 		
 		// Done ---------------------- DCA_hospital ----------------
-//		String proj04Src= "/Users/Dareen/Desktop/DCAFixer_Experimets/Github_Dataset/Used_in_Fixer/hospital-database-with-JDBC-client-master/JDBC_CLIENT/src";
-//		String proj04Jar= "/Users/Dareen/Desktop/DCAFixer_Experimets/Github_Dataset/Used_in_Fixer/hospital-database-with-JDBC-client-master/JDBC_CLIENT/dist/DCAFixer_Hospital.jar";
+//		String proj04Src= "/Users/dpc100/Desktop/DCAFixer_Experimets/Github_Dataset/Used_in_Fixer/hospital-database-with-JDBC-client-master/JDBC_CLIENT/src";
+//		String proj04Jar= "/Users/dpc100/Desktop/DCAFixer_Experimets/Github_Dataset/Used_in_Fixer/hospital-database-with-JDBC-client-master/JDBC_CLIENT/dist/DCAFixer_Hospital.jar";
 //		String proj04Csv = CsvDir + "DCA_hospital.csv";
 //		P= 3; N = 5; 
 //
@@ -674,9 +674,9 @@ public class Experiment2_FL_Detection {
 //		}
 //		print_all_results(proj04Name);
 		// ----------------------  ----------------
-//		String proj04Src= "/Users/Dareen/eclipse-workspace/DCAFixer/src/datasets/Apps_Before/Dummy_before_1116.java";//"/Users/Dareen/eclipse-workspace/DCAFixer/src/datasets/Apps_Before";
-//		String proj04Jar= "/Users/Dareen/Fixer/Experiments/JARS/apps-before.jar";
-////		/Users/Dareen/Fixer/Experiments/JARS/apps-before.jar
+//		String proj04Src= "/Users/dpc100/eclipse-workspace/DCAFixer/src/datasets/Apps_Before/Dummy_before_1116.java";//"/Users/dpc100/eclipse-workspace/DCAFixer/src/datasets/Apps_Before";
+//		String proj04Jar= "/Users/dpc100/Fixer/Experiments/JARS/apps-before.jar";
+////		/Users/dpc100/Fixer/Experiments/JARS/apps-before.jar
 //		String proj04Csv = CsvDir + "synthetic.csv";
 //		P= 3; N = 5; 
 //
@@ -689,10 +689,10 @@ public class Experiment2_FL_Detection {
 //		print_all_results(proj04Name);
 		
 		String projCsv;
-//		String proj01Src= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/zjjava-master/JDBC/src/com/baiyi/jdbc/_11clob"; 
-//		String proj01Jar= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/vSync.jar";
-		String proj01Src= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/vSync-master/vSync/src";
-		String proj01Jar= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/vSync.jar";
+//		String proj01Src= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/zjjava-master/JDBC/src/com/baiyi/jdbc/_11clob"; 
+//		String proj01Jar= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/vSync.jar";
+		String proj01Src= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/vSync-master/vSync/src";
+		String proj01Jar= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/vSync.jar";
 		
 		projCsv = CsvDir +"vSync.csv";
 		String proj01Name = "vSync";
