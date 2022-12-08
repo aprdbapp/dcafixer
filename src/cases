@@ -1,0 +1,17 @@
+Input Functions:
+Scanner
+{nextLine, nextFloat, nextDouble, nextByte, nextLine, nextBoolean, nextLong, nextShort, nextBigInteger, nextBigDecimal}
+
+BufferedReader
+{read, readLine}
+
+InputStream 
+{FileInputStream, read}
+
+JTextField 
+{getText, getSelectedText} 
+
+IP Functions: 
+executeQuery", "executeUpdate", "execute", "getConnection", "createStatement", "Properties", "PreparedStatement"
+
+Signatures:
