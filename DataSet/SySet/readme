@@ -1,0 +1,11 @@
+How to compile and run a fuzzer: 
+
+javac -cp .:$(~/Fixer/jqf/scripts/classpath.sh) SqlInjectonGenerator.java Dummy_before_X_fuzzer.java Dummy_before_X.java ConnUtil.java
+
+
+#javac -cp .:$(~/Fixer/jqf/scripts/classpath.sh) SqlInjectonGenerator.java [Dummy_before_X_fuzzer.java] [Dummy_before_X.java] [ConnUtil.java]
+#gen. 						fuzzer input class name		fuzzer class name	app class name		util
+
+~/Fixer/jqf/bin/jqf-zest -c .:$(~/Fixer/jqf/scripts/classpath.sh) Dummy_before_X_fuzzer Dummy_befe_X_test
+
+~/Fixer/jqf/bin/jqf-repro -c .:$(~/Fixer/jqf/scripts/classpath.sh) Dummy_before_X_fuzzer Dummy_before_X_test fuzz-results/failures/id_000000 
