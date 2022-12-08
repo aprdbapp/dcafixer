@@ -27,7 +27,7 @@ import java.util.stream.Collectors;
 
 /**
  *
- * @author Dareen
+ * @author dpc100
  */
 public class PatternGen {
 	static boolean print =false;
@@ -1096,7 +1096,7 @@ public class PatternGen {
 		}		
 		
 	//Print fixed App
-		String fixedAppPath ="/Users/Dareen/eclipse-workspace/DCAFixer/src/datasets/AppsAfter/"+vulCName.replace("before", "after")+".java";
+		String fixedAppPath ="/Users/dpc100/eclipse-workspace/DCAFixer/src/datasets/AppsAfter/"+vulCName.replace("before", "after")+".java";
 //		String fixedAppPath = getPath (vulApp)+  vulCName+"_fixed.java";// ****** for other cases
 //		for(String l :fixedAppLines ) {
 //			System.out.println(l);
@@ -1220,7 +1220,7 @@ public class PatternGen {
 		
 	//Print fixed App
 		// For exp3
-		String fixedAppPath ="/Users/Dareen/eclipse-workspace/DCAFixer/src/datasets/AppsAfter/"+vulCName.replace("before", "after")+".java";
+		String fixedAppPath ="/Users/dpc100/eclipse-workspace/DCAFixer/src/datasets/AppsAfter/"+vulCName.replace("before", "after")+".java";
 		
 //		for(String l :fixedAppLines ) {
 //			System.out.println(l);
@@ -1361,7 +1361,7 @@ public class PatternGen {
 
 		// Print fixed App
 		// For exp3
-		String fixedAppPath = "/Users/Dareen/eclipse-workspace/DCAFixer/src/datasets/AppsAfter/"
+		String fixedAppPath = "/Users/dpc100/eclipse-workspace/DCAFixer/src/datasets/AppsAfter/"
 				+ vulCName.replace("before", "after") + ".java";
 		if (print) {
 			System.out.println("fixedAppPath: " + fixedAppPath);
@@ -1470,7 +1470,7 @@ public class PatternGen {
 		
 	//Print fixed App
 		// For exp3
-//		String fixedAppPath ="/Users/Dareen/eclipse-workspace/DCAFixer/src/datasets/AppsAfter/"+vulCName.replace("before", "after")+".java";
+//		String fixedAppPath ="/Users/dpc100/eclipse-workspace/DCAFixer/src/datasets/AppsAfter/"+vulCName.replace("before", "after")+".java";
 		String fixedAppPath = getPath (vulApp)+  vulCName+"_fixed.java";// ****** for other cases
 //		for(String l :fixedAppLines ) {
 //			System.out.println(l);
@@ -1519,16 +1519,16 @@ public class PatternGen {
 	//test the other patches & perform the experiment
 	public static void main(String[] args) throws Exception {
 		// Paths to each SSlice and VSlice
-		String VSlicesPath = "/Users/Dareen/Fixer/tmp/TSet/Slices/SQLIV/q_s_v/SSlices/VSlices/";
-		String SSlicesPath ="/Users/Dareen/Fixer/tmp/TSet/Slices/SQLIV/q_s_v/SSlices/tmp";
+		String VSlicesPath = "/Users/dpc100/Fixer/tmp/TSet/Slices/SQLIV/q_s_v/SSlices/VSlices/";
+		String SSlicesPath ="/Users/dpc100/Fixer/tmp/TSet/Slices/SQLIV/q_s_v/SSlices/tmp";
 		// Theorically SSlice7 is the best
-		String vslicePath = "/Users/Dareen/Fixer/tmp/TSet/Slices/SQLIV/q_s_v/q_s_v_vul.java";
-		String vslicePath2 = "/Users/Dareen/Fixer/tmp/TSet/Slices/SQLIV/q_s_v/VSliceNoCS.java";
+		String vslicePath = "/Users/dpc100/Fixer/tmp/TSet/Slices/SQLIV/q_s_v/q_s_v_vul.java";
+		String vslicePath2 = "/Users/dpc100/Fixer/tmp/TSet/Slices/SQLIV/q_s_v/VSliceNoCS.java";
 
 //        findAllDiffs(vslicePath,SSlicesPath);
 		//findPatternsAndApply( String vulApp , String vsPath, String slicesPath, String context, String app_sql, String app_stmt, boolean print);
-		 String vulApp="/Users/Dareen/NetBeansProjects/smallBank/src/smallbank/CV1_vul.java";
-	      String context="/Users/Dareen/Fixer/tmp/TSet/Slices/SQLIV/q_s_v/context_test.txt";
+		 String vulApp="/Users/dpc100/NetBeansProjects/smallBank/src/smallbank/CV1_vul.java";
+	      String context="/Users/dpc100/Fixer/tmp/TSet/Slices/SQLIV/q_s_v/context_test.txt";
 	      AppMD app_md = new AppMD(); 
 	      app_md.app_sql = "sql";
 	      app_md.app_stmt = "stmt";
@@ -1565,18 +1565,18 @@ public class PatternGen {
 //        findAllDiffs(VSlicesPath+"VSlice12.java",SSlicesPath);
         
 
-//		String sslicePath1 = "/Users/Dareen/Fixer/tmp/TSet/Slices/SQLIV/q_s_v/SSlices/tmp/SSlice1.java";
-//		String sslicePath2 = "/Users/Dareen/Fixer/tmp/TSet/Slices/SQLIV/q_s_v/SSlices/tmp/SSlice2.java";
-//		String sslicePath3 = "/Users/Dareen/Fixer/tmp/TSet/Slices/SQLIV/q_s_v/SSlices/tmp/SSlice3.java";
-//		String sslicePath4 = "/Users/Dareen/Fixer/tmp/TSet/Slices/SQLIV/q_s_v/SSlices/tmp/SSlice4.java";
-//		String sslicePath5 = "/Users/Dareen/Fixer/tmp/TSet/Slices/SQLIV/q_s_v/SSlices/tmp/SSlice5.java";
-//		String sslicePath6 = "/Users/Dareen/Fixer/tmp/TSet/Slices/SQLIV/q_s_v/SSlices/tmp/SSlice6.java";
-//		String sslicePath7 = "/Users/Dareen/Fixer/tmp/TSet/Slices/SQLIV/q_s_v/SSlices/tmp/SSlice7.java";
-//		String sslicePath8 = "/Users/Dareen/Fixer/tmp/TSet/Slices/SQLIV/q_s_v/SSlices/tmp/SSlice8.java";
-//		String sslicePath9 = "/Users/Dareen/Fixer/tmp/TSet/Slices/SQLIV/q_s_v/SSlices/tmp/SSlice9.java";
-//		String sslicePath10 = "/Users/Dareen/Fixer/tmp/TSet/Slices/SQLIV/q_s_v/SSlices/tmp/SSlice10.java";
-//		String sslicePath11 = "/Users/Dareen/Fixer/tmp/TSet/Slices/SQLIV/q_s_v/SSlices/tmp/SSlice11.java";
-//		String sslicePath12 = "/Users/Dareen/Fixer/tmp/TSet/Slices/SQLIV/q_s_v/SSlices/tmp/SSlice12.java";
+//		String sslicePath1 = "/Users/dpc100/Fixer/tmp/TSet/Slices/SQLIV/q_s_v/SSlices/tmp/SSlice1.java";
+//		String sslicePath2 = "/Users/dpc100/Fixer/tmp/TSet/Slices/SQLIV/q_s_v/SSlices/tmp/SSlice2.java";
+//		String sslicePath3 = "/Users/dpc100/Fixer/tmp/TSet/Slices/SQLIV/q_s_v/SSlices/tmp/SSlice3.java";
+//		String sslicePath4 = "/Users/dpc100/Fixer/tmp/TSet/Slices/SQLIV/q_s_v/SSlices/tmp/SSlice4.java";
+//		String sslicePath5 = "/Users/dpc100/Fixer/tmp/TSet/Slices/SQLIV/q_s_v/SSlices/tmp/SSlice5.java";
+//		String sslicePath6 = "/Users/dpc100/Fixer/tmp/TSet/Slices/SQLIV/q_s_v/SSlices/tmp/SSlice6.java";
+//		String sslicePath7 = "/Users/dpc100/Fixer/tmp/TSet/Slices/SQLIV/q_s_v/SSlices/tmp/SSlice7.java";
+//		String sslicePath8 = "/Users/dpc100/Fixer/tmp/TSet/Slices/SQLIV/q_s_v/SSlices/tmp/SSlice8.java";
+//		String sslicePath9 = "/Users/dpc100/Fixer/tmp/TSet/Slices/SQLIV/q_s_v/SSlices/tmp/SSlice9.java";
+//		String sslicePath10 = "/Users/dpc100/Fixer/tmp/TSet/Slices/SQLIV/q_s_v/SSlices/tmp/SSlice10.java";
+//		String sslicePath11 = "/Users/dpc100/Fixer/tmp/TSet/Slices/SQLIV/q_s_v/SSlices/tmp/SSlice11.java";
+//		String sslicePath12 = "/Users/dpc100/Fixer/tmp/TSet/Slices/SQLIV/q_s_v/SSlices/tmp/SSlice12.java";
 
 //		PatternsRanks.clear();
 //        find_diff(vslicePath, sslicePath1);
