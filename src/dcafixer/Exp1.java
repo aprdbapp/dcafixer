@@ -25,7 +25,7 @@ import slicer.utilities.StrUtil;
 /*
  * 
  * */
-public class Experiment {
+public class Exp1 {
 	static int Qparser = 0;// sig is null
 	static int SEC_PS = 0;// -,-,null
 	static int SEC_WL = 0;// -,?,[v,?]
@@ -187,8 +187,8 @@ public class Experiment {
 //		int tc = 0; //testCounter
 		
 		//System.out.println("*************************************");
-//		String path = "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFIX-main/Data Set/Manual/After/after_1.java";
-//		String path = "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFIX-main/Data Set/Manual/Before/before_1.java";
+//		String path = "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFIX-main/Data Set/Manual/After/after_1.java";
+//		String path = "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFIX-main/Data Set/Manual/Before/before_1.java";
 		File directoryPath = new File(dirPath);
 		String[] contents = directoryPath.list();
 //		long start = System.currentTimeMillis();
@@ -226,16 +226,16 @@ public class Experiment {
 				if(print)System.out.println("No IP");
 //				continue;
 			}
-//			================= 2.	slice check that query is complete, path: /Users/Dareen/Fixer/tmp/TSet/Slices/AppVSlice =================
+//			================= 2.	slice check that query is complete, path: /Users/dpc100/Fixer/tmp/TSet/Slices/AppVSlice =================
 
-			String slices_and_context_path ="/Users/Dareen/Fixer/tmp/TSet/Slices/AppVSlice";
+			String slices_and_context_path ="/Users/dpc100/Fixer/tmp/TSet/Slices/AppVSlice";
 //			String md_file = "/"+content.replace(".java", "")+"_md.txt";
 //			String v_slice_file = "/"+content.replace(".java", "")+"_VSlice.java";
 //			String v_context_file = "/"+content.replace(".java", "")+"_context.txt";
 			String md_file = "/exp3_md.txt";
 			String v_slice_file = "/exp3_VSlice.java";
 			String v_context_file = "/exp3_context.txt";
-			String appJar = "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/synthetic.jar";
+			String appJar = "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/synthetic.jar";
 			String mdPath = slices_and_context_path + md_file;// "/md.txt";// +
 			String v_appSrc = dirPath + content;
 			String v_slicePath = slices_and_context_path +v_slice_file;// "/VSlice.java";// + v_slice_file;
@@ -246,7 +246,7 @@ public class Experiment {
 //			String v_path_className = v_classPath + v_className_only;
 			String v_path_className = "datasets/Apps_Before/"+ v_className_only;
 ;
-			///Users/Dareen/eclipse-workspace/DCAFixer/src/datasets/Apps_Before
+			///Users/dpc100/eclipse-workspace/DCAFixer/src/datasets/Apps_Before
 			if(print )System.out.println("v_path_className: "+ v_path_className);
 			
 			EBCreation.find_slice_and_context(appJar, v_appSrc, v_path_className, v_sliceDir, v_lno, v_seed, v_sstype,
@@ -361,8 +361,8 @@ public class Experiment {
 //		int tc = 0; //testCounter
 		
 		//System.out.println("*************************************");
-//		String path = "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFIX-main/Data Set/Manual/After/after_1.java";
-//		String path = "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFIX-main/Data Set/Manual/Before/before_1.java";
+//		String path = "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFIX-main/Data Set/Manual/After/after_1.java";
+//		String path = "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFIX-main/Data Set/Manual/Before/before_1.java";
 		File directoryPath = new File(dirPath);
 		String[] contents = directoryPath.list();
 		long start = System.currentTimeMillis();
@@ -397,16 +397,16 @@ public class Experiment {
 				if(print)System.out.println("No IP");
 //				continue;
 			}
-//			================= 2.	slice check that query is complete, path: /Users/Dareen/Fixer/tmp/TSet/Slices/AppVSlice =================
+//			================= 2.	slice check that query is complete, path: /Users/dpc100/Fixer/tmp/TSet/Slices/AppVSlice =================
 
-			String slices_and_context_path ="/Users/Dareen/Fixer/tmp/TSet/Slices/AppVSlice";
+			String slices_and_context_path ="/Users/dpc100/Fixer/tmp/TSet/Slices/AppVSlice";
 //			String md_file = "/"+content.replace(".java", "")+"_md.txt";
 //			String v_slice_file = "/"+content.replace(".java", "")+"_VSlice.java";
 //			String v_context_file = "/"+content.replace(".java", "")+"_context.txt";
 			String md_file = "/exp3_md.txt";
 			String v_slice_file = "/exp3_VSlice.java";
 			String v_context_file = "/exp3_context.txt";
-			String appJar = "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/synthetic.jar";
+			String appJar = "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/synthetic.jar";
 			String mdPath = slices_and_context_path + md_file;// "/md.txt";// +
 			String v_appSrc = dirPath + content;
 			String v_slicePath = slices_and_context_path +v_slice_file;// "/VSlice.java";// + v_slice_file;
@@ -417,7 +417,7 @@ public class Experiment {
 //			String v_path_className = v_classPath + v_className_only;
 			String v_path_className = "datasets/Apps_Before/"+ v_className_only;
 ;
-			///Users/Dareen/eclipse-workspace/DCAFixer/src/datasets/Apps_Before
+			///Users/dpc100/eclipse-workspace/DCAFixer/src/datasets/Apps_Before
 			if(print )System.out.println("v_path_className: "+ v_path_className);
 			
 			EBCreation.find_slice_and_context(appJar, v_appSrc, v_path_className, v_sliceDir, v_lno, v_seed, v_sstype,
@@ -521,10 +521,10 @@ public class Experiment {
 
 	public static void dcafixer_performance_dataset3() throws Exception {
 
-//		File file1 = new File("/Users/Dareen/Desktop/DCAFixer_Experimets/Exp3_Before_results1.txt");
-//		File file2 = new File("/Users/Dareen/Desktop/DCAFixer_Experimets/Exp3_Before_results2.txt");
-//		File file3 = new File("/Users/Dareen/Desktop/DCAFixer_Experimets/Exp3_Before_results3.txt");
-////	    PrintStream tofile = new PrintStream(new File("/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFIX-main/Data Set/Synthetic/dcafixer.sql"));
+//		File file1 = new File("/Users/dpc100/Desktop/DCAFixer_Experimets/Exp3_Before_results1.txt");
+//		File file2 = new File("/Users/dpc100/Desktop/DCAFixer_Experimets/Exp3_Before_results2.txt");
+//		File file3 = new File("/Users/dpc100/Desktop/DCAFixer_Experimets/Exp3_Before_results3.txt");
+////	    PrintStream tofile = new PrintStream(new File("/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFIX-main/Data Set/Synthetic/dcafixer.sql"));
 //		PrintStream tofile1 = new PrintStream(file1);
 //		PrintStream tofile2 = new PrintStream(file2);
 //		PrintStream tofile3 = new PrintStream(file3);
@@ -537,19 +537,19 @@ public class Experiment {
 		// Wasn't able to build a jar file.
 		// Read the files
 //		System.setOut(tofile1);
-//		String dirPath = "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFIX-main/Data Set/Manual/Before";
+//		String dirPath = "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFIX-main/Data Set/Manual/Before";
 //		test_fault_localization(dirPath, "\"before\"", "are not fixed yet", false);
 ////		System.setOut(console);
 //		System.out.println("Done with exp 1: Before !");
 //
 ////		System.setOut(tofile2);
-//		String dirPath2 = "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFIX-main/Data Set/Manual/After";
+//		String dirPath2 = "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFIX-main/Data Set/Manual/After";
 //		test_fault_localization(dirPath2, "\"after\"", "are not fixed by SQLIFix", false);
 ////		System.setOut(console);
 //		System.out.println("Done with exp 2: After SQLIFIX !");
 //		
-//		String dirPath3 ="/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFIX-main/Data Set/Synthetic/Apps_Before";
-		String dirPath3 ="/Users/Dareen/eclipse-workspace/DCAFixer/src/datasets/Apps_Before/";
+//		String dirPath3 ="/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFIX-main/Data Set/Synthetic/Apps_Before";
+		String dirPath3 ="/Users/dpc100/eclipse-workspace/DCAFixer/src/datasets/Apps_Before/";
 		test_fault_localization(dirPath3, "\"SYNTHETIC\"", "are not fixed by SQLIFix", false);
 //		test_fault_localization_one("Dummy_before_3037.java",dirPath3, "\"SYNTHETIC\"", "are not fixed by SQLIFix", true);
 //		String content = "Dummy_before_2519.java";//"Dummy_before_3477.java";
@@ -566,7 +566,7 @@ public class Experiment {
 		// Experiments
 		Experiment.dcafixer_performance_dataset3();
 //		
-//		test_one("/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFIX-main/Data Set/Manual/After", "after_120.java", true);
+//		test_one("/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFIX-main/Data Set/Manual/After", "after_120.java", true);
 	}
 
 }
