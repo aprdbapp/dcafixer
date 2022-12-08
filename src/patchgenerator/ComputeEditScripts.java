@@ -21,12 +21,12 @@ import java.io.IOException;
 
 /**
  *
- * @author Dareen
+ * @author dpc100
  */
 public class ComputeEditScripts {
 // Run.initGenerators(); // registers the available parsers
-//String srcFile = "\"/Users/Dareen/NetBeansProjects/smallBank/src/smallbank/diff_examples/PS.java\"";
-//String dstFile = "/Users/Dareen/NetBeansProjects/smallBank/src/smallbank/diff_examples/PS_withFin_and_stmt.java";
+//String srcFile = "\"/Users/dpc100/NetBeansProjects/smallBank/src/smallbank/diff_examples/PS.java\"";
+//String dstFile = "/Users/dpc100/NetBeansProjects/smallBank/src/smallbank/diff_examples/PS_withFin_and_stmt.java";
 //
 //
 //        
