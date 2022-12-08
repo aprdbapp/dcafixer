@@ -1090,36 +1090,36 @@ public class SlicerTool {
 			throws IOException, WalaException, CancelException, InvalidClassFileException {
 //        find_all_class_methods("src\\main\\java\\CWE15_External_Control_of_System_or_Configuration_Setting.jar" , "CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_02");
 //        if(Print) System.out.println(do_thin_slicer("src\\main\\java\\CWE15_External_Control_of_System_or_Configuration_Setting.jar" , "goodG2B1" , "CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_02" ,166));
-		String trainingPath = "/Users/Dareen/Fixer/Experiments/TrainingCases/example_";
-		String testingPath = "/Users/Dareen/Fixer/Experiments/TestCases/test_";
+		String trainingPath = "/Users/dpc100n/Fixer/Experiments/TrainingCases/example_";
+		String testingPath = "/Users/dpc100n/Fixer/Experiments/TestCases/test_";
 		int lno ;
 		
 		// ---------------------------------------------- test client apps
-//		String appSrc= //"/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/banking-app-devkala48-master/src/main/java/com/revature/Staff.java";
-//						"/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/banking-app-devkala48-master/src/main/java/com/revature/Staff.java";
-////		"/Users/Dareen/Fixer/Experiments/SRC/banking-app-devkala48-master/src/main/java/com/revature/Staff.java";
-//		String appJar= //"/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/banking-app-devkala48-master.jar";
-//		"/Users/Dareen/Fixer/Experiments/JARS/banking-app-devkala48-master.jar";
+//		String appSrc= //"/Users/dpc100n/Desktop/DCAFixer_Experimets/SQLIFix-projects/banking-app-devkala48-master/src/main/java/com/revature/Staff.java";
+//						"/Users/dpc100n/Desktop/DCAFixer_Experimets/SQLIFix-projects/banking-app-devkala48-master/src/main/java/com/revature/Staff.java";
+////		"/Users/dpc100n/Fixer/Experiments/SRC/banking-app-devkala48-master/src/main/java/com/revature/Staff.java";
+//		String appJar= //"/Users/dpc100n/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/banking-app-devkala48-master.jar";
+//		"/Users/dpc100n/Fixer/Experiments/JARS/banking-app-devkala48-master.jar";
 //		String key = "executeQuery"; lno = 27;
 		
 		
-		String appJar= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/JavaGit-master.jar";
-//		"/Users/Dareen/Fixer/Experiments/JARS/JavaGit-master.jar";
-		String appSrc= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/JavaGit-master/src/gs/veepeek/assessment/Assesment.java";
+		String appJar= "/Users/dpc100n/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/JavaGit-master.jar";
+//		"/Users/dpc100n/Fixer/Experiments/JARS/JavaGit-master.jar";
+		String appSrc= "/Users/dpc100n/Desktop/DCAFixer_Experimets/SQLIFix-projects/JavaGit-master/src/gs/veepeek/assessment/Assesment.java";
 //		String key = "executeUpdate"; lno = 122;
 		String key = "executeUpdate"; lno = 131;
 //		String classPath = "gs/veepeek/assessment/Assesment";
 		
-//		String appSrc =  "/Users/Dareen/NetBeansProjects/smallBank/src/smallbank/PaperExample_vul.java";
-//		String appJar = "/Users/Dareen/Fixer/Experiments/TrainingCases/smallbank.jar";
+//		String appSrc =  "/Users/dpc100n/NetBeansProjects/smallBank/src/smallbank/PaperExample_vul.java";
+//		String appJar = "/Users/dpc100n/Fixer/Experiments/TrainingCases/smallbank.jar";
 //		String key = "createStatement";lno = 32;//, sstype = 'r'
 		
 		
-//		String appSrc = "/Users/Dareen/NetBeansProjects/smallBank/src/smallbank/PaperExample_vul.java";
-//		String appSrc = "/Users/Dareen/NetBeansProjects/smallBank/src/TSet/" + "SQLIV_q_s_v.java";;
-		/// Users/Dareen/NetBeansProjects/smallBank/src/TSet/SQLIV_q_s_v.java
+//		String appSrc = "/Users/dpc100n/NetBeansProjects/smallBank/src/smallbank/PaperExample_vul.java";
+//		String appSrc = "/Users/dpc100n/NetBeansProjects/smallBank/src/TSet/" + "SQLIV_q_s_v.java";;
+		/// Users/dpc100n/NetBeansProjects/smallBank/src/TSet/SQLIV_q_s_v.java
 		
-//		String appJar = "/Users/Dareen/Fixer/Experiments/TrainingCases/example_2/smallbank.jar";
+//		String appJar = "/Users/dpc100n/Fixer/Experiments/TrainingCases/example_2/smallbank.jar";
 		
 //		
 		String[] subpath = appSrc.split("/");
@@ -1136,7 +1136,7 @@ public class SlicerTool {
 //				"com/revature/Staff";
 //		"java/com/revature/Staff";
 //		"com/revature/Staff";
-//		"Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/banking-app-devkala48-master/src/main/java/com/revature/Staff";
+//		"Users/dpc100n/Desktop/DCAFixer_Experimets/SQLIFix-projects/banking-app-devkala48-master/src/main/java/com/revature/Staff";
 //		"banking-app-devkala48-master/src/main/java/com/revature/Staff";
 
 //		List<SliceLine> sliceLines = do_thin_slicer_by_only_lno(appJar, className, 14, appSrc, "");
@@ -1176,9 +1176,9 @@ public class SlicerTool {
 		// ===========================================
 
 //		if(Print) System.out.println("**************** Second test");
-//		String appSrc2 = "/Users/Dareen/NetBeansProjects/smallBank/src/smallbank/PaperExample_vul.java";
-////		String appJar = "/Users/Dareen/Fixer/Experiments/TrainingCases/example_2/smallbank.jar";
-//		String appJar2 = "/Users/Dareen/Fixer/Experiments/TrainingCases/smallbank.jar";
+//		String appSrc2 = "/Users/dpc100n/NetBeansProjects/smallBank/src/smallbank/PaperExample_vul.java";
+////		String appJar = "/Users/dpc100n/Fixer/Experiments/TrainingCases/example_2/smallbank.jar";
+//		String appJar2 = "/Users/dpc100n/Fixer/Experiments/TrainingCases/smallbank.jar";
 //		String[] subpath2 = appSrc2.split("/");
 //		String classPath2 = subpath2[subpath2.length - 2] + "/";
 //		String className_only2 = (subpath2[subpath2.length - 1].split("\\."))[0];
@@ -1241,8 +1241,8 @@ public class SlicerTool {
 		if(Print) System.out.print("Done!");
 
 		// ---------------------------------------------- test regular apps
-//		String appSrc = "/Users/Dareen/Fixer/Experiments/TrainingCases/example_1/add5.java";
-//		String appJar = "/Users/Dareen/Fixer/Experiments/TrainingCases/example_1/calculator.jar";
+//		String appSrc = "/Users/dpc100n/Fixer/Experiments/TrainingCases/example_1/add5.java";
+//		String appJar = "/Users/dpc100n/Fixer/Experiments/TrainingCases/example_1/calculator.jar";
 //		String[] subpath = appSrc.split("/");
 //		String classPath = "";
 //		String className_only =  (subpath[subpath.length-1].split("\\."))[0];
