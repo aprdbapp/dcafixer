@@ -97,7 +97,7 @@ public class CompileFixedApp {
 
 	public static void main(String[] args) throws IOException {
 
-		String filePath = "/Users/Dareen/NetBeansProjects/smallBank/src/smallbank/CV1_01.java";
+		String filePath = "/Users/dpc100/NetBeansProjects/smallBank/src/smallbank/CV1_01.java";
 
 		if (fixedAppisCompiled(filePath, false))
 			System.out.println("App was compiled successfully!");
