@@ -24,9 +24,9 @@ import slicer.utilities.StrUtil;
  *  3- 
  * 
  * */
-public class Experimnet2_PIs {
+public class Exp2PIs {
 	// * L1 = files_srcCode_list
-	static String expPath ="/Users/Dareen/Desktop/DCAFixer_Experimets/";
+	static String expPath ="/Users/dpc100/Desktop/DCAFixer_Experimets/";
 //	static boolean print =true;
 	static List<String> SCList = new ArrayList<>();
 //	static int  DP, DN;
@@ -311,9 +311,9 @@ public class Experimnet2_PIs {
 //					write paths to a csv file
 //					edit files to have 3 more colomns vul?, note, dcafixer results
 		// Scan Hiberante files
-//		String proj1_src = "/Users/Dareen/Desktop/DCAFixer_Experimets/hibernate-orm-main";
-//		String proj1_jar = "/Users/Dareen/Desktop/DCAFixer_Experimets/hibernate-orm-main.jar";
-//		String proj1_Csv = "/Users/Dareen/Desktop/DCAFixer_Experimets/Csv_files/" + StrUtil.get_classname(proj1_src)+".csv";
+//		String proj1_src = "/Users/dpc100/Desktop/DCAFixer_Experimets/hibernate-orm-main";
+//		String proj1_jar = "/Users/dpc100/Desktop/DCAFixer_Experimets/hibernate-orm-main.jar";
+//		String proj1_Csv = "/Users/dpc100/Desktop/DCAFixer_Experimets/Csv_files/" + StrUtil.get_classname(proj1_src)+".csv";
 //		analyzing_project(proj1_jar, proj1_src, proj1_Csv, true);
 
 		//================= Accuracy vars ==================
@@ -329,86 +329,86 @@ public class Experimnet2_PIs {
 		//--------------------------------------------------
 		
 		
-		String CsvDir = "/Users/Dareen/Desktop/DCAFixer_Experimets/Csv_files/";
-		String proj1Src= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/banking-app-devkala48-master/src";
-		String proj1Jar= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/banking-app.jar";
+		String CsvDir = "/Users/dpc100/Desktop/DCAFixer_Experimets/Csv_files/";
+		String proj1Src= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/banking-app-devkala48-master/src";
+		String proj1Jar= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/banking-app.jar";
 		String proj1Csv = CsvDir + "banking-app.csv";
 		P= 4; N = 11; 
 		analyze_project(proj1Jar, proj1Src, proj1Csv, false, P, N);
 
 		
-		String proj2Src= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/Online-Book-Store-System-master/src/workspace";
-		String proj2Jar= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/BookStore.jar";
+		String proj2Src= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/Online-Book-Store-System-master/src/workspace";
+		String proj2Jar= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/BookStore.jar";
 		String proj2Csv = CsvDir + "BookStore.csv";
 		P= 46; N = 0; 
 		analyze_project(proj2Jar, proj2Src, proj2Csv, false, P, N);
 
 		
-		String proj3Src= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/crawledemo-master/property/src/com/property";
-		String proj3Jar= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/crawledemo_property.jar";
+		String proj3Src= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/crawledemo-master/property/src/com/property";
+		String proj3Jar= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/crawledemo_property.jar";
 		String proj3Csv = CsvDir + "crawledemo_property.csv";
 		P= 3; N = 0; 
 		analyze_project(proj3Jar, proj3Src, proj3Csv, false, P, N);
 
 
-		String proj4Src= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/Ecomerce--master/Ecomerce/src/ecomerce";
-		String proj4Jar= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/Ecomerce.jar";
+		String proj4Src= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/Ecomerce--master/Ecomerce/src/ecomerce";
+		String proj4Jar= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/Ecomerce.jar";
 		String proj4Csv = CsvDir + "Ecomerce.csv";
 		P= 79; N = 15; 
 		analyze_project(proj4Jar, proj4Src, proj4Csv, false, P, N);
 
 
-		String proj5Src= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/fiftyfiftystockscreener-master/src/com/eddiedunn";
-		String proj5Jar= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/fiftyfiftystockscreener.jar";
+		String proj5Src= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/fiftyfiftystockscreener-master/src/com/eddiedunn";
+		String proj5Jar= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/fiftyfiftystockscreener.jar";
 		String proj5Csv = CsvDir + "fiftyfiftystockscreener.csv";
 		P= 32; N = 4; 
 		analyze_project(proj5Jar, proj5Src, proj5Csv, false, P, N);
 
 
-		String proj6Src= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/GUI-DBMS-master/TableEasy/src/tableeasy";
-		String proj6Jar= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/GUI-DBMS.jar";
+		String proj6Src= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/GUI-DBMS-master/TableEasy/src/tableeasy";
+		String proj6Jar= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/GUI-DBMS.jar";
 		String proj6Csv = CsvDir + "GUI-DBMS.csv";
 		P= 33; N = 20; 
 		analyze_project(proj6Jar, proj6Src, proj6Csv, false, P, N);
 
 
-		String proj7Src= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/InventarioWeb-master/src/java";
-		String proj7Jar= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/InventarioWeb.jar";
+		String proj7Src= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/InventarioWeb-master/src/java";
+		String proj7Jar= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/InventarioWeb.jar";
 		String proj7Csv = CsvDir + "InventarioWeb.csv";
 		P= 1; N = 31; 
 		analyze_project(proj7Jar, proj7Src, proj7Csv, false, P, N);
 
 
-		String proj8Src= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/JavaGit-master/src";
-		String proj8Jar= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/JavaGit-master.jar";
+		String proj8Src= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/JavaGit-master/src";
+		String proj8Jar= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/JavaGit-master.jar";
 		String proj8Csv = CsvDir + "JavaGit-master.csv";
 		P= 2; N = 1;
 		analyze_project(proj8Jar, proj8Src, proj8Csv, false, P, N); 
 
 		
-		String proj9Src= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/mariadb-connector-j-master/src";
-		String proj9Jar= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/mariadb.jar";
+		String proj9Src= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/mariadb-connector-j-master/src";
+		String proj9Jar= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/mariadb.jar";
 		String proj9Csv = CsvDir + "mariadb.csv";
 		P= 18; N = 1744; 
 		analyze_project(proj9Jar, proj9Src, proj9Csv, false, P, N);
 
 
-		String proj10Src= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/TFG_PC-master/src";
-		String proj10Jar= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/TFG_PC-master.jar";
+		String proj10Src= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/TFG_PC-master/src";
+		String proj10Jar= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/TFG_PC-master.jar";
 		String proj10Csv = CsvDir + "TFG_PC-master.csv";
 		P= 77; N = 1;
 		analyze_project(proj10Jar, proj10Src, proj10Csv, false, P, N); 
 
 
-		String proj11Src= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/vSync-master/vSync/src";
-		String proj11Jar= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/vSync.jar";
+		String proj11Src= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/vSync-master/vSync/src";
+		String proj11Jar= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/vSync.jar";
 		String proj11Csv = CsvDir + "vSync.csv";
 		P= 20; N = 1;
 		analyze_project(proj11Jar, proj11Src, proj11Csv, false, P, N); 
 
 
-		String proj12Src= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/zjjava-master";
-		String proj12Jar= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/zjjavaJDBC.jar";
+		String proj12Src= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/zjjava-master";
+		String proj12Jar= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/zjjavaJDBC.jar";
 		String proj12Csv = CsvDir + "zjjavaJDBC.csv";
 		P= 3; N = 6;
 		analyze_project(proj12Jar, proj12Src, proj12Csv, false, P, N);
@@ -416,35 +416,35 @@ public class Experimnet2_PIs {
 		
 		//====================
 		String projCsv;
-		String proj01Src= "/Users/Dareen/NetBeansProjects/DCAFixer_bookstore2/src"; 
-		String proj01Jar= "/Users/Dareen/NetBeansProjects/DCAFixer_bookstore2/dist/DCAFixer_bookstore2.jar";
+		String proj01Src= "/Users/dpc100/NetBeansProjects/DCAFixer_bookstore2/src"; 
+		String proj01Jar= "/Users/dpc100/NetBeansProjects/DCAFixer_bookstore2/dist/DCAFixer_bookstore2.jar";
 		projCsv = CsvDir +"DCA_bookstore.csv";
 		P= 1; N = 5;
 		analyze_project(proj01Jar, proj01Src, projCsv, false, P, N);
 
 		
-		String proj02Src= "/Users/Dareen/NetBeansProjects/DCAFixer_NewsPaper/src/dcafixer_newspaper";
-		String proj02Jar= "/Users/Dareen/NetBeansProjects/DCAFixer_NewsPaper/dist/DCAFixer_NewsPaper.jar";
+		String proj02Src= "/Users/dpc100/NetBeansProjects/DCAFixer_NewsPaper/src/dcafixer_newspaper";
+		String proj02Jar= "/Users/dpc100/NetBeansProjects/DCAFixer_NewsPaper/dist/DCAFixer_NewsPaper.jar";
 		projCsv = CsvDir + "DCA_NewsPaper.csv";
 		P= 5; N =9; 
 		analyze_project(proj02Jar, proj02Src, projCsv, false, P, N);
 
 		
-		String proj03Src= "/Users/Dareen/NetBeansProjects/DCAFixer_FuelOrdersClient/src/fuelordersclient"; 
-		String proj03Jar= "/Users/Dareen/NetBeansProjects/DCAFixer_FuelOrdersClient/dist/DCAFixer_FuelOrdersClient2.jar";
+		String proj03Src= "/Users/dpc100/NetBeansProjects/DCAFixer_FuelOrdersClient/src/fuelordersclient"; 
+		String proj03Jar= "/Users/dpc100/NetBeansProjects/DCAFixer_FuelOrdersClient/dist/DCAFixer_FuelOrdersClient2.jar";
 		projCsv = CsvDir + "DCA_FuelOrders.csv";
 		P= 5; N = 2; 
 		analyze_project(proj03Jar, proj03Src, projCsv, false, P, N);
 		
 		
-		String proj04Src= "/Users/Dareen/Desktop/DCAFixer_Experimets/Github_Dataset/Used_in_Fixer/hospital-database-with-JDBC-client-master/JDBC_CLIENT/src";
-		String proj04Jar= "/Users/Dareen/Desktop/DCAFixer_Experimets/Github_Dataset/Used_in_Fixer/hospital-database-with-JDBC-client-master/JDBC_CLIENT/dist/DCAFixer_Hospital.jar";
+		String proj04Src= "/Users/dpc100/Desktop/DCAFixer_Experimets/Github_Dataset/Used_in_Fixer/hospital-database-with-JDBC-client-master/JDBC_CLIENT/src";
+		String proj04Jar= "/Users/dpc100/Desktop/DCAFixer_Experimets/Github_Dataset/Used_in_Fixer/hospital-database-with-JDBC-client-master/JDBC_CLIENT/dist/DCAFixer_Hospital.jar";
 		projCsv = CsvDir + "DCA_hospital.csv";
 		P= 3; N = 5; 
 		analyze_project(proj04Jar, proj04Src, projCsv, false, P, N);
 
 
-//		String f1 = "/Users/Dareen/Desktop/DCAFixer_Experimets/hibernate-orm-main/hibernate-core/src/test/java/org/hibernate/orm/test/cache/RefreshUpdatedDataTest.java";
+//		String f1 = "/Users/dpc100/Desktop/DCAFixer_Experimets/hibernate-orm-main/hibernate-core/src/test/java/org/hibernate/orm/test/cache/RefreshUpdatedDataTest.java";
 //		search_for_IPs(f1, true);
 		
 		//================= Accuracy Computation ==================
