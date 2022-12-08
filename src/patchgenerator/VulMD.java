@@ -14,7 +14,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Dareen
+ * @author dpc100
  */
 public final class VulMD {
 
@@ -77,7 +77,7 @@ public final class VulMD {
     }
 
     public VulMD(String sig, String type) {
-        String slices_and_context_path = "/Users/Dareen/Fixer/tmp/TSet/Slices/" + type + "/";
+        String slices_and_context_path = "/Users/dpc100/Fixer/tmp/TSet/Slices/" + type + "/";
         String md_subPath = sig.replace(",", "_").replace(" ", "").replace("[", "").replace("]", "") + "_md.txt";
         String mdPath = slices_and_context_path + md_subPath;
         srcln_to_method.clear();
