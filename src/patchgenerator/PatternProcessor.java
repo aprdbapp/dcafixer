@@ -50,7 +50,7 @@ import spoon.support.sniper.SniperJavaPrettyPrinter;
 
 /**
  *
- * @author Dareen
+ * @author dpc100
  */
 public class PatternProcessor {
 
@@ -1063,15 +1063,15 @@ public static void operationPartsPrint(Operation op) {
         
         
         
-//        File f1 = new File( "/Users/Dareen/Fixer/Experiments/TrainingCases/example_2/slices/test1_vul.java");
-//        File f2 = new File("/Users/Dareen/Fixer/Experiments/TrainingCases/example_2/slices/test1.java");
-//        File f1 = new File( "/Users/Dareen/NetBeansProjects/smallBank/src/smallbank/CV1_vul.java";
-//        File f2 = new File("/Users/Dareen/NetBeansProjects/smallBank/src/smallbank/CV1_01.java";
+//        File f1 = new File( "/Users/dpc100/Fixer/Experiments/TrainingCases/example_2/slices/test1_vul.java");
+//        File f2 = new File("/Users/dpc100/Fixer/Experiments/TrainingCases/example_2/slices/test1.java");
+//        File f1 = new File( "/Users/dpc100/NetBeansProjects/smallBank/src/smallbank/CV1_vul.java";
+//        File f2 = new File("/Users/dpc100/NetBeansProjects/smallBank/src/smallbank/CV1_01.java";
 
-//        File f1 = new File("/Users/Dareen/NetBeansProjects/smallBank/src/smallbank/diff_examples/PS.java");
-//        File f2 = new File("/Users/Dareen/NetBeansProjects/smallBank/src/smallbank/diff_examples/PS_withFin_and_stmt.java");
+//        File f1 = new File("/Users/dpc100/NetBeansProjects/smallBank/src/smallbank/diff_examples/PS.java");
+//        File f2 = new File("/Users/dpc100/NetBeansProjects/smallBank/src/smallbank/diff_examples/PS_withFin_and_stmt.java");
 
-        //"/Users/Dareen/NetBeansProjects/smallBank/src/smallbank/diff_examples/PS_NoFin.java
+        //"/Users/dpc100/NetBeansProjects/smallBank/src/smallbank/diff_examples/PS_NoFin.java
         Diff result = diff.compare(f1, f2); //diffs to transform  f1 to be like f2
         
 //                Diff result = diff.compare(f2, f1);
