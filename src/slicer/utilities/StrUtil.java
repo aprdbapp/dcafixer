@@ -179,7 +179,7 @@ public class StrUtil {
 
 	}
 
-	// "/Users/Dareen/eclipse-workspace/Calculator/src/add2.java"
+	// "/Users/dpc100/eclipse-workspace/Calculator/src/add2.java"
 
 	static int countOccurences(String str, String word) {
 		// split the string by spaces in a
