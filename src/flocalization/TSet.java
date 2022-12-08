@@ -124,7 +124,7 @@ public class TSet {
 	}
 
 	public static void find_TSet_SSlices() {
-		String appSrc_path = "/Users/Dareen/NetBeansProjects/smallBank/src/TSet/";
+		String appSrc_path = "/Users/dpc100/NetBeansProjects/smallBank/src/TSet/";
 		DataDependenceOptions dOptions, dOptions2;
 		ControlDependenceOptions cOptions, cOptions2;
 		dOptions = DataDependenceOptions.NO_HEAP;
