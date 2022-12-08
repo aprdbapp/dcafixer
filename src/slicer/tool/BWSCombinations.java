@@ -534,23 +534,23 @@ public class BWSCombinations {
 		//=====================
 		
 
-		String src="/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/mariadb-connector-j-master/src/main/java/org/mariadb/jdbc/Connection.java";
-		String jar="/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/mariadb.jar";
+		String src="/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/mariadb-connector-j-master/src/main/java/org/mariadb/jdbc/Connection.java";
+		String jar="/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/mariadb.jar";
 //		build_cg("getLowercaseTableNames", jar,"Connection",262 , src,
 //				0, DataDependenceOptions.NO_HEAP, ControlDependenceOptions.NONE, 's', "executeQuery");
 
 		
 
 		
-		String src2="/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/mariadb-connector-j-master/src/benchmark/java/org/mariadb/jdbc/Select_1.java";
+		String src2="/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/mariadb-connector-j-master/src/benchmark/java/org/mariadb/jdbc/Select_1.java";
 		build_cg("run", jar,"Select_1",18 , src2,
 				0, DataDependenceOptions.NO_HEAP, ControlDependenceOptions.NONE, 's', "executeQuery");
 
 		
 		//=====================
-//		String src="/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/TFG_PC-master/src/Data/Data.java";
-//		String src2= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/TFG_PC-master/src/Data/Clases/Imagen.java";
-//		String jar="/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/TFG_PC-master.jar";
+//		String src="/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/TFG_PC-master/src/Data/Data.java";
+//		String src2= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/TFG_PC-master/src/Data/Clases/Imagen.java";
+//		String jar="/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/TFG_PC-master.jar";
 //		build_cg("LastId", jar,"Data/Data",109 , src,
 //				0, DataDependenceOptions.NO_HEAP, ControlDependenceOptions.NONE, 's', "executeQuery");
 
@@ -562,13 +562,13 @@ public class BWSCombinations {
 
 		
 		//=====================
-//		String src="/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/JavaGit-master/src/gs/veepeek/assessment/Assesment.java";
-//		String jar="/Users/Dareen/Fixer/Experiments/JARS/JavaGit-master.jar";
+//		String src="/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/JavaGit-master/src/gs/veepeek/assessment/Assesment.java";
+//		String jar="/Users/dpc100/Fixer/Experiments/JARS/JavaGit-master.jar";
 //		build_cg("main", jar,"gs/veepeek/assessment/Assesment",122 , src,
 //				0, DataDependenceOptions.NO_HEAP, ControlDependenceOptions.NONE, 's', "executeUpdate");
 		//=====================
-//		String src="/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/InventarioWeb-master/src/java/Modelo/dao/FacturaProductoDAO.java";
-//		String jar="/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/InventarioWeb.jar";
+//		String src="/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/InventarioWeb-master/src/java/Modelo/dao/FacturaProductoDAO.java";
+//		String jar="/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/InventarioWeb.jar";
 //		build_cg("insertar", jar,"Modelo/dao/FacturaProductoDAO", 31, src,
 //				0, DataDependenceOptions.NO_HEAP, ControlDependenceOptions.NONE, 's', "executeUpdate");
 		
@@ -579,10 +579,10 @@ public class BWSCombinations {
 //		//executeQuery @ updateActionPerformed @ 169
 //		//executeQuery @ insertActionPerformed @ 467
 //		//executeQuery @ jButton2ActionPerformed @ 835
-//		//String src="/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/GUI-DBMS-master/TableEasy/src/tableeasy/graphicaluserinterface/widgets/Addcoloumn.java";
-//		String src ="/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/GUI-DBMS-master/TableEasy/src/tableeasy/graphicaluserinterface/widgets/TableCreationBox.java";
-////				"/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/GUI-DBMS-master/TableEasy/src/tableeasy/graphicaluserinterface/widgets/OtherQueries.java";
-//		String jar="/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/GUI-DBMS.jar";
+//		//String src="/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/GUI-DBMS-master/TableEasy/src/tableeasy/graphicaluserinterface/widgets/Addcoloumn.java";
+//		String src ="/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/GUI-DBMS-master/TableEasy/src/tableeasy/graphicaluserinterface/widgets/TableCreationBox.java";
+////				"/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/GUI-DBMS-master/TableEasy/src/tableeasy/graphicaluserinterface/widgets/OtherQueries.java";
+//		String jar="/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/GUI-DBMS.jar";
 ////		executeUpdate @ actionPerformed @ 280
 //		build_cg("DatabaseSelector", jar,"tableeasy/graphicaluserinterface/widgets/DatabaseSelector",32 , src,
 //				0, DataDependenceOptions.NO_HEAP, ControlDependenceOptions.NONE, 's', "executeQuery");
@@ -590,22 +590,22 @@ public class BWSCombinations {
 		//=====================
 //		tableeasy/graphicaluserinterface/widgets/Databases
 		//executeQuery @ actionPerformed @ 232
-//		String src ="/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/GUI-DBMS-master/TableEasy/src/tableeasy/graphicaluserinterface/widgets/Databases.java";
-//		String jar="/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/GUI-DBMS.jar";
+//		String src ="/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/GUI-DBMS-master/TableEasy/src/tableeasy/graphicaluserinterface/widgets/Databases.java";
+//		String jar="/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/GUI-DBMS.jar";
 //		build_cg("actionPerformed", jar,"tableeasy/graphicaluserinterface/widgets/Databases",232 , src,
 //				0, DataDependenceOptions.NO_HEAP, ControlDependenceOptions.NONE, 's', "executeQuery");
 		
 		//=====================
 //		executeUpdate @ screenMarketWithFiles @ 175
-//		String src="/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/fiftyfiftystockscreener-master/src/com/eddiedunn/screen/Screener.java";
-//		String jar="/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/fiftyfiftystockscreener.jar";
+//		String src="/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/fiftyfiftystockscreener-master/src/com/eddiedunn/screen/Screener.java";
+//		String jar="/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/fiftyfiftystockscreener.jar";
 //		build_cg("screenMarketWithFiles", jar,"com/eddiedunn/screen/Screener", 175, src,
 //				0, DataDependenceOptions.NO_HEAP, ControlDependenceOptions.NONE, 's', "executeUpdate");
 //		
 		//=====================
 		//v_path_className: test/NHttpClientConnManagement, lno:247 key: executeUpdate
-//		String src="/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/fiftyfiftystockscreener-master/src/com/eddiedunn/test/NHttpClientConnManagement.java";
-//		String jar="/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/fiftyfiftystockscreener.jar";
+//		String src="/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/fiftyfiftystockscreener-master/src/com/eddiedunn/test/NHttpClientConnManagement.java";
+//		String jar="/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/fiftyfiftystockscreener.jar";
 //		//com/eddiedunn/test/NHttpClientConnManagement/GetKeyStatisticsRequestHandler
 //		//com/eddiedunn/test/NHttpClientConnManagement$GetKeyStatisticsRequestHandler
 //		//
@@ -615,30 +615,30 @@ public class BWSCombinations {
 		//=====================
 		
 //		 //executeUpdate @ phone_buttonActionPerformed @ 115
-//		String src= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/Ecomerce--master/Ecomerce/src/ecomerce/Phone.java";
-//		String jar= "/Users/Dareen/Fixer/Experiments/JARS/ecomerce2.jar";//"/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/Ecomerce.jar";
-////				"/Users/Dareen/Fixer/Experiments/JARS/Ecomerce.jar";
+//		String src= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/Ecomerce--master/Ecomerce/src/ecomerce/Phone.java";
+//		String jar= "/Users/dpc100/Fixer/Experiments/JARS/ecomerce2.jar";//"/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/Ecomerce.jar";
+////				"/Users/dpc100/Fixer/Experiments/JARS/Ecomerce.jar";
 //		build_cg(null, jar,"ecomerce/Phone", 115, src,
 //		0, DataDependenceOptions.NO_HEAP, ControlDependenceOptions.NONE, 's', "executeUpdate");
 		//=====================
 //		//v_path_className: util/JdbcHelper, lno:57 key: execute  --- slicer failed
-//		String src ="/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/crawledemo-master/property/src/com/property/util/JdbcHelper.java";
-//		String jar ="/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/crawledemo_property.jar";
+//		String src ="/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/crawledemo-master/property/src/com/property/util/JdbcHelper.java";
+//		String jar ="/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/crawledemo_property.jar";
 //		//crawledemo-master/property/src/com/property/util/JdbcHelper
 //		build_cg(null, jar,"com/property/util/JdbcHelper", 57, src,
 //				0, DataDependenceOptions.NO_HEAP, ControlDependenceOptions.NONE, 's', "execute");
 		//=====================		
 //		//executeQuery @ orderActionPerformed @ 257
-//		String src ="/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/crawledemo-master/property/src/com/property/util/JdbcHelper.java";
-//		String jar ="/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/crawledemo_property.jar";
+//		String src ="/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/crawledemo-master/property/src/com/property/util/JdbcHelper.java";
+//		String jar ="/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/crawledemo_property.jar";
 //		//crawledemo-master/property/src/com/property/util/JdbcHelper
 //		build_cg(null, jar,"com/property/util/JdbcHelper", 257, src,
 //				0, DataDependenceOptions.NO_HEAP, ControlDependenceOptions.NONE, 's', "execute");
 
 		//=====================
 //		//executeQuery @ querysql @ 14 --> failed to parse
-//		String src ="/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/Online-Book-Store-System-master/src/workspace/myapi.java";
-//		String jar ="/Users/Dareen/Fixer/Experiments/JARS/Online-Book-Store-System-master.jar";
+//		String src ="/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/Online-Book-Store-System-master/src/workspace/myapi.java";
+//		String jar ="/Users/dpc100/Fixer/Experiments/JARS/Online-Book-Store-System-master.jar";
 //
 //		build_cg(null, jar,"workspace/myapi", 14, src,
 //				0, DataDependenceOptions.NO_HEAP, ControlDependenceOptions.NONE, 's', "executeQuery");
@@ -646,16 +646,16 @@ public class BWSCombinations {
 		//************************** >  STABLE CASE, works with all CGs and with the new Ex
 		
 //		//executeQuery @ 15 
-//		String src= "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/Online-Book-Store-System-master/src/workspace/myfeedback.java";
-//		String jar= "/Users/Dareen/Fixer/Experiments/JARS/bookstore.jar";
+//		String src= "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/Online-Book-Store-System-master/src/workspace/myfeedback.java";
+//		String jar= "/Users/dpc100/Fixer/Experiments/JARS/bookstore.jar";
 //		build_cg(null, jar,"workspace/myfeedback", 15, src,
 //				0, DataDependenceOptions.NO_HEAP, ControlDependenceOptions.NONE, 's', "executeQuery");
 		//=====================
-		//"/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/banking-app-devkala48-master/src/main/java/com/revature/App.java";
-		// "/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/banking-app-devkala48-master/src";
-		//"/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/banking-app.jar";
-//		"/Users/Dareen/Fixer/Experiments/JARS/Online-Book-Store-System-master.jar";
-		//"/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/banking-app.jar";
+		//"/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/banking-app-devkala48-master/src/main/java/com/revature/App.java";
+		// "/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/banking-app-devkala48-master/src";
+		//"/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/banking-app.jar";
+//		"/Users/dpc100/Fixer/Experiments/JARS/Online-Book-Store-System-master.jar";
+		//"/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/banking-app.jar";
 //		main/java/com/revature/Account
 		//com/revature/Account
 //		"com/revature/App", 23
@@ -666,8 +666,8 @@ public class BWSCombinations {
 		
 		//=====================
 //		//executeQuery @ login @ 87
-//		String src="/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/banking-app-devkala48-master/src/main/java/com/revature/UsersAuth.java";
-//		String jar="/Users/Dareen/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/banking-app.jar";
+//		String src="/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/banking-app-devkala48-master/src/main/java/com/revature/UsersAuth.java";
+//		String jar="/Users/dpc100/Desktop/DCAFixer_Experimets/SQLIFix-projects/jar_files/banking-app.jar";
 ////		main/java/com/revature/UsersAuth
 //		build_cg(null, jar,"com/revature/UsersAuth", 87, src,
 //				0, DataDependenceOptions.NO_HEAP, ControlDependenceOptions.NONE, 's', "executeQuery");
