@@ -105,7 +105,7 @@ public class RplacePHs {
 
 	public static void main(String[] args) throws IOException {
 		String vs = "";
-		String slicespath = "/Users/Dareen/Fixer/tmp/TSet/Slices/SQLIV/q_s_v/SSlices/";
+		String slicespath = "/Users/dpc100/Fixer/tmp/TSet/Slices/SQLIV/q_s_v/SSlices/";
 	
 		replacePlaceHolders(vs, slicespath, "conn", "rs", "sql", false);
 
