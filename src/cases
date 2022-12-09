@@ -1,4 +1,5 @@
 Input Functions:
+-----------------
 Scanner
 {nextLine, nextFloat, nextDouble, nextByte, nextLine, nextBoolean, nextLong, nextShort, nextBigInteger, nextBigDecimal}
 
@@ -12,6 +13,29 @@ JTextField
 {getText, getSelectedText} 
 
 IP Functions: 
+-------------
 executeQuery", "executeUpdate", "execute", "getConnection", "createStatement", "Properties", "PreparedStatement"
 
 Signatures:
+-----------
+
+DML Cases:
+-----------
+DMLT = {s|i|d|u}, DMLT is DML query type. It could be  s = select, i = insert, d = delete, u = update.
+q, DMLT,[v] -> v = column Value is user input. It’s the only case where preparedstatement (PS) can be used
+q, DMLT,[t] -> Table name is user input. Whitelisting (WL) is the solution.
+q, DMLT,[c] -> Column name is user input. WL is the solution.
+q, DMLT,[c,v] -> PS is the best, but it cannot work when c (Column name) is user input. So, WL with warning message.
+q,DML_TYPE,[t,v] -> PS is the best, but it cannot work when t (table name) is user input. So, WL with warning message.
+q,DML_TYPE,[c,t] -> WL
+q,DML_TYPE,[c,v,t]
+
+DDL Cases:
+----------
+q,-,{c|v|t|c,v|c,t|c,t|c,t,v} -> DDL query. WL is the solution
+
+
+Other Cases:
+------------
+-,-,[] Constant query that doesn’t rely on user input. It’s secure.
+q,a,[] All the query is passed as user input. 
