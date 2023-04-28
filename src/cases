@@ -30,6 +30,7 @@ q,DML_TYPE,[t,v] -> PS is the best, but it cannot work when t (table name) is us
 q,DML_TYPE,[c,t] -> WL
 q,DML_TYPE,[c,v,t]
 
+
 DDL Cases:
 ----------
 q,-,{c|v|t|c,v|c,t|c,t|c,t,v} -> DDL query. WL is the solution
