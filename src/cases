@@ -18,6 +18,11 @@ executeQuery", "executeUpdate", "execute", "getConnection", "createStatement", "
 
 Signatures:
 -----------
+Credential issues:
+------------------
+p,h,[] -> password is hardcoded. 
+p,d,[] -> password is stored in a "String" datatype and it's not secure.
+u,h,[] -> username is hardcoded.
 
 DML Cases:
 -----------
@@ -38,5 +43,6 @@ q,-,{c|v|t|c,v|c,t|c,t|c,t,v} -> DDL query. WL is the solution
 
 Other Cases:
 ------------
--,-,[] Constant query that doesn’t rely on user input. It’s secure.
-q,a,[] All the query is passed as user input. 
+-,-,[] -> Constant query that doesn’t rely on user input. It’s secure.
+q,a,[] -> All the query is passed as user input. 
+c,e,[] -> connection to database is not encrypted.
