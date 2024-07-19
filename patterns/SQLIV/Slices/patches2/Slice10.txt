@@ -1,0 +1,1 @@
+cl, ResultType_dcafixer rs_dcafixer = stmt_dcafixer.executeCall_dcafixer("query_with_replace_calls");
