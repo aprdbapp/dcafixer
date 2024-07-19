@@ -23,9 +23,9 @@ To install and set up this prototype, follow these steps:
 To test the prototype to fix an application (Input: Vulnerable project):
 
 1. Build the jar of the project.
-2. **Provide the project source code path**.
-3. **Provide the project jar path**.
-4. **Provide a name for your project**. The system will use this name to create a folder under the `out` directory to store the report.
+2. Provide the project source code path.
+3. Provide the project jar path.
+4. Provide a name for your project. The system will use this name to create a folder under the `out` directory to store the report.
 
 In the class `src/dcafixer/Main.java`, you can add the following line to start DCAFixer:
 
