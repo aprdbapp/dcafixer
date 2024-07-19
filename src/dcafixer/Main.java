@@ -9,11 +9,9 @@ public class Main {
 	public static void main(String[] args) throws Exception {
 
 
-		String projectSrc = G.projectsPath  + "smallBank/src/TSet2/";
-		String projectJar = G.projectsJarsPath + "smallBank.jar";
-		//String paperExCsv = csvDir + "PaperExample_vul.csv";
-
-		String projectName = "PaperExample_vul";
+		String projectSrc = "path/to/buggy/project/src/"; // should ends with "/"
+		String projectJar = "path/to/buggy/project/example1.jar";
+		String projectName = "example1";
 
 		
 		
