@@ -1,5 +1,5 @@
 
-##Patch Validation:
+## Patch Validation:
 
 To validate generated patches for SQL Injection Vulnerabilities (SQLIVs), you can fuzz the generated patches. This will help detect issues that might be introduced during the fixing process, such as syntax errors in the queries. To achieve this, you need to create two test cases: one for the original vulnerable slice and one for the generated patch. Then, use the DCAFixer SQL injection payload generator as illustrated in the following example.
 
