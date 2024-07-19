@@ -55,8 +55,9 @@ public class FuzzTest{
    @Fuzz
    public void fuzz_test_vslice(@From(SqlInjectonGenerator.class) String var1)
 			throws SQLException, ClassNotFoundException {
+	Connection conn = null;
 	Class.forName("com.mysql.cj.jdbc.Driver");
-	Connection conn = DriverManager.getConnection(DB_URL, DB_UN, DB_PW);
+	conn = DriverManager.getConnection(DB_URL, DB_UN, DB_PW);
 	Statement stmt = conn.createStatement();
 	assertTrue(var1 + ", " + " is/are the input to perform SQLi attack on VSlice!", vslice(conn, var1).next() == false);
 	if(stmt != null)
@@ -67,9 +68,8 @@ public class FuzzTest{
    @Fuzz
    public void fuzz_test_gpatch(@From(SqlInjectonGenerator.class) String var1)
 			throws SQLException, ClassNotFoundException {
-	Connection conn = null;
 	Class.forName("com.mysql.cj.jdbc.Driver");
-	conn = DriverManager.getConnection(DB_URL, DB_UN, DB_PW);
+	Connection conn = DriverManager.getConnection(DB_URL, DB_UN, DB_PW);
 	Statement stmt = conn.createStatement();
 	assertTrue(var1 + ", " + " is/are the input to perform SQLi attack on gpatch!", gpatch(conn, var1).next() == false);
 	if(stmt != null)
@@ -83,21 +83,24 @@ public class FuzzTest{
 
 
 How to compile the fuzzer: 
+```bash
 
-javac -cp .:$([path to]/jqf/scripts/classpath.sh) SqlInjectonGenerator.java FuzzTest.java 
-
+javac -cp .:$(path to/jqf/scripts/classpath.sh) SqlInjectonGenerator.java FuzzTest.java 
+```
 How to run the fuzzer: 
-[path to]/jqf//bin/jqf-zest -c .:$([path to]/jqf//scripts/classpath.sh) FuzzTest fuzz_test_gpatch
+```bash
+path to/jqf//bin/jqf-zest -c .:$(path to/jqf/scripts/classpath.sh) FuzzTest fuzz_test_gpatch
+```
+To test the found payload:
+```bash
+path to/jqf//bin/jqf-repro -c .:$(path to/jqf/scripts/classpath.sh) FuzzTest fuzz_test_gpatch fuzz-results/failures/id..
+```
+
+
+path to/jqf//bin/jqf-zest -c .:$(path to/jqf/scripts/classpath.sh) FuzzTest fuzz_test_vslice
 
 To test the found payload:
-[path to]/jqf//bin/jqf-repro -c .:$([path to]/jqf//scripts/classpath.sh) FuzzTest fuzz_test_gpatch fuzz-results/failures/[id]
-
-
-
-[path to]/jqf//bin/jqf-zest -c .:$([path to]/jqf//scripts/classpath.sh) FuzzTest fuzz_test_vslice
-
-To test the found payload:
-[path to]/jqf//bin/jqf-repro -c .:$([path to]/jqf//scripts/classpath.sh) FuzzTest fuzz_test_vslice fuzz-results/failures/[id]
+path to/jqf//bin/jqf-repro -c .:$(path to/jqf/scripts/classpath.sh) FuzzTest fuzz_test_vslice fuzz-results/failures/[id]
 ==============
 
 **Unit testing:**
