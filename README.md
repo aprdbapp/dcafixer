@@ -31,7 +31,7 @@ In the class `src/dcafixer/Main.java`, you can add the following line to start D
 
 ```java
 Fixer.start_dcafixer(projectName, projectSrc, projectJar);
-
+```
 where:
 
 projectName = The name of the project without spaces. It should be unique; don't name two projects with the same name to avoid mixed results from two projects in the same folder.
@@ -39,4 +39,5 @@ projectSrc = The path where the project source code is located.
 projectJar = The path to the project jar file.
 
 
-## Usage Output 
+## Output 
+You will find slices of the vulnerabilities and a report of fixed and non-fixed vulnerabilities under the directory `out/projectName`. The report file is named `report.txt`.
