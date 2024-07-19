@@ -42,4 +42,4 @@ projectJar = The path to the project jar file.
 
 
 ## Output 
-You will find slices of the vulnerabilities and a report of fixed and non-fixed vulnerabilities under the directory `out/projectName`. The report file is named `report.txt`.
+You will find slices of the vulnerabilities and a report of fixed and non-fixed vulnerabilities under the directory `out/dcafixer-report/projectName`. The report file is named `report.txt`.
