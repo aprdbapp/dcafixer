@@ -1,0 +1,6 @@
++(cl), String username_dcafixer = System.getenv("DB_USERNAME"); // You should set an environment variable `export DB_USERNAME=your_username'
++(cl), String password_dcafixer = System.getenv("DB_PASSWORD"); // You should set an environment variable `export DB_PASSWORD=your_password'
++(cl), Properties properties_dcafixer = new Properties();
++(cl), properties_dcafixer.put(prop_url_dcafixer, url_dcafixer);
++(cl), properties_dcafixer.put(prop_un_dcafixer, username_dcafixer);
++(cl), properties.put(prop_pw_dcafixer, password_dcafixer);

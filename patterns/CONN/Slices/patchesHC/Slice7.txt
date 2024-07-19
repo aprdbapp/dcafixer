@@ -1,0 +1,3 @@
++(cl), String username_dcafixer = System.getenv("DB_USERNAME"); // You should set an environment variable `export DB_USERNAME=your_username'
++(cl), String password_dcafixer = System.getenv("DB_PASSWORD"); // You should set an environment variable `export DB_PASSWORD=your_password'
++(cl), Connection conn_dcafixer = DriverManager.getConnection(url_dcafixer, username_dcafixer, password_dcafixer);

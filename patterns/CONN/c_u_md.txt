@@ -1,0 +1,7 @@
+sig:c,-,[u]
+v_sl:/Users/Dareen/Fixer/tmp/TSet/Slices/CONN/c_u_vul.java
+v_src:/Users/Dareen/NetBeansProjects/smallBank/src/TSet/UConn_vul.java
+v_con:/Users/Dareen/Fixer/tmp/TSet/Slices/CONN/c_u_vul_context.txt
+s_sl:/Users/Dareen/Fixer/tmp/TSet/Slices/CONN/c_u_sec.java
+s_src:/Users/Dareen/NetBeansProjects/smallBank/src/TSet/PW_sec.java
+s_con:/Users/Dareen/Fixer/tmp/TSet/Slices/CONN/c_u_sec_context.txt

@@ -1,0 +1,5 @@
++(cl), Scanner scanner = new Scanner(System.in);
++(cl), String username_dcafixer = scanner.nextLine();
++(cl), char[] password_dcafixerXX = scanner.nextLine().toCharArray();
++(cl), scanner.close();
++(cl), Connection conn_dcafixer = DriverManager.getConnection(url_dcafixer, username_dcafixer, String.valueOf(password_dcafixerXX));

@@ -1,0 +1,4 @@
++(ql), username_dcafixer = MethodCallExpr_un;
++(ql), password_dcafixer = "";
++(ql), char[] password_dcafixerXX = MethodCallExpr_pw.toCharArray();
++(cl), Connection conn_dcafixer = DriverManager.getConnection (url_dcafixer, username_dcafixer, new String(password_dcafixerXX));
