@@ -1,4 +1,3 @@
-
 ## Patch Validation:
 
 To validate generated patches for SQL Injection Vulnerabilities (SQLIVs), you can fuzz the generated patches. This will help detect issues that might be introduced during the fixing process, such as syntax errors in the queries. To achieve this, you need to create two test cases: one for the original vulnerable slice and one for the generated patch. Then, use the DCAFixer SQL injection payload generator as illustrated in the following example.
@@ -10,14 +9,14 @@ https://github.com/rohanpadhye/JQF
 
 VSlice created by DCAFixer:
 ```java
-String sql3= "Select * from ACCOUNTS where name = '" + custname + "';";;//sig: q,s,v
+String sql3= "Select * from ACCOUNTS where name = '" + custname + "';";
 ResultSet rs3 = stmt.executeQuery(sql3);
 ```
 
 Test case for the VSlice:
 ```java
 public ResultSet vslice(Statement stmt, String custname) {
-	String sql3= "Select * from ACCOUNTS where name = '" + custname + "';";;//sig: q,s,v
+	String sql3= "Select * from ACCOUNTS where name = '" + custname + "';";
 	ResultSet rs3 = stmt.executeQuery(sql3);
 	return rs3;
 }
