@@ -18,11 +18,8 @@ public class G {
 	public static final String encrSetting = "ssl=false";
 	public static final String methodArg = "MethodArg";
 	
-	public static final String ResultsPath = "out/dcafixer-report/";//"/Users/dareen/Fixer/DCAFixer_Experimets/Results/";
-	public static final String CsvDir= "out/dcafixer-report/";//"/Users/dareen/Fixer/DCAFixer_Experimets/Excel_files/";
-	
-	public static final String projectsPath = "/Users/dareen/Fixer/DCAFixer_Experimets/SQLIFix-projects/";
-	//public static final String NBProjectsPath = "/Users/dareen/NetBeansProjects/";
+	public static final String ResultsPath = "out/dcafixer-report/";
+	public static final String CsvDir= "out/dcafixer-report/";
 	
 	public static final String projectsJarsPath = "/Users/dareen/Fixer/Experiments/JARS/";
 	//"/Users/dareen/Fixer/tmp/TSet/Slices/" to "patterns/"
@@ -40,7 +37,7 @@ public class G {
 	
 	
 	public static final String testTmpPath = "out";
-	public static final String slicesTmpPath = "out/dcafixer-report/";//"/Users/dareen/Fixer/DCAFixer_Experimets/Slices/";
+	public static final String slicesTmpPath = "out/dcafixer-report/";
 	public static final String QSV = "Q,s,[v]";
 	public static final String QIV = "Q,i,[v]";
 	public static final String QUV = "Q,u,[v]";
@@ -79,7 +76,7 @@ public class G {
 	public static final int NOSOL = 3;
 	public static List<String> sqlParserFails = new ArrayList<>();
 	public static final int CG_AllEPoints_MyEx = 0;
-	public static final int CG_MainEPoints_CGTUtilEx = 1; //new FileProvider().getFile(CallGraphTestUtil.REGRESSION_EXCLUSIONS)
+	public static final int CG_MainEPoints_CGTUtilEx = 1; 
 	public static final int CG_MainEPoints_MyEx = 2;
 	public static final int CG_AllEPoints_MyExGUI = 3;
 	
