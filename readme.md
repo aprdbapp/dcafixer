@@ -44,4 +44,4 @@ projectJar = The path to the project jar file.
 ## Output 
 You will find slices of the vulnerabilities and a report of fixed and non-fixed vulnerabilities under the directory `out/dcafixer-report/projectName`. The report file is named `report.txt`.
 
-Instructions on patch validation are - [HERE]([dcafixer/patch-validation.md](https://github.com/aprdbapp/dcafixer/blob/main/patch-validation.md)
+Instructions on patch validation are in ([dcafixer/patch-validation.md](https://github.com/aprdbapp/dcafixer/blob/main/patch-validation.md)
