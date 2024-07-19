@@ -47,10 +47,26 @@ public ResultSet gpatch(Connection conn, String custname) {
 ```
 
 **Using Assertion:**
-With gpatch:
+Create Fuzz test cases:
 ```java
-@Fuzz
-public void fuzz_test(@From(SqlInjectonGenerator.class) String var1)
+public class FuzzTest{
+   //Add all necessary information for connection 
+
+   @Fuzz
+   public void fuzz_test_vslice(@From(SqlInjectonGenerator.class) String var1)
+			throws SQLException, ClassNotFoundException {
+	Connection conn = null;
+	Class.forName("com.mysql.cj.jdbc.Driver");
+	conn = DriverManager.getConnection(DB_URL, DB_UN, DB_PW);
+	Statement stmt = conn.createStatement();
+	assertTrue(var1 + ", " + " is/are the input to perform SQLi attack on VSlice!", vslice(conn, var1).next() == false);
+	if(stmt != null)
+		stmt.close();
+	if (conn != null)
+		conn.close();		
+   }
+   @Fuzz
+   public void fuzz_test_gpatch(@From(SqlInjectonGenerator.class) String var1)
 			throws SQLException, ClassNotFoundException {
 	Connection conn = null;
 	Class.forName("com.mysql.cj.jdbc.Driver");
@@ -62,28 +78,31 @@ public void fuzz_test(@From(SqlInjectonGenerator.class) String var1)
 	if (conn != null)
 		conn.close();
 		
+   }
 }
 ```
-With vslice:
-```java
-@Fuzz
-public void fuzz_test(@From(SqlInjectonGenerator.class) String var1)
-			throws SQLException, ClassNotFoundException {
-	Connection conn = null;
-	Class.forName("com.mysql.cj.jdbc.Driver");
-	conn = DriverManager.getConnection(DB_URL, DB_UN, DB_PW);
-	Statement stmt = conn.createStatement();
-	assertTrue(var1 + ", " + " is/are the input to perform SQLi attack on VSlice!", vslice(conn, var1).next() == false);
-	if(stmt != null)
-		stmt.close();
-	if (conn != null)
-		conn.close();
-		
-}
 
+
+How to compile the fuzzer: 
+
+javac -cp .:$([path to]/jqf/scripts/classpath.sh) SqlInjectonGenerator.java FuzzTest.java 
+
+How to run the fuzzer: 
+[path to]/jqf//bin/jqf-zest -c .:$([path to]/jqf//scripts/classpath.sh) FuzzTest fuzz_test_gpatch
+
+To test the found payload:
+[path to]/jqf//bin/jqf-repro -c .:$([path to]/jqf//scripts/classpath.sh) FuzzTest fuzz_test_gpatch fuzz-results/failures/[id]
+
+
+
+[path to]/jqf//bin/jqf-zest -c .:$([path to]/jqf//scripts/classpath.sh) FuzzTest fuzz_test_vslice
+
+To test the found payload:
+[path to]/jqf//bin/jqf-repro -c .:$([path to]/jqf//scripts/classpath.sh) FuzzTest fuzz_test_vslice fuzz-results/failures/[id]
+==============
 
 **Unit testing:**
-We can use the fuzz tests and the test cases to perform unit tests. In these tests, we use a benign valid input and compare the results of both the original vulnerable slice (vslice) and the generated patch (gpatch). If the gpatch behaves differently, it indicates that the SQL command changes introduced errors.
+We can use the test cases to perform unit tests. In these tests, we use a benign valid input and compare the results of both the original vulnerable slice (vslice) and the generated patch (gpatch). If the gpatch behaves differently, it indicates that the SQL command changes introduced errors.
 ```java
 public void unit_test(String var1) throws SQLException, ClassNotFoundException {
 	// Create conn and stmt
