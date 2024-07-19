@@ -55,9 +55,8 @@ public class FuzzTest{
    @Fuzz
    public void fuzz_test_vslice(@From(SqlInjectonGenerator.class) String var1)
 			throws SQLException, ClassNotFoundException {
-	Connection conn = null;
 	Class.forName("com.mysql.cj.jdbc.Driver");
-	conn = DriverManager.getConnection(DB_URL, DB_UN, DB_PW);
+	Connection conn = DriverManager.getConnection(DB_URL, DB_UN, DB_PW);
 	Statement stmt = conn.createStatement();
 	assertTrue(var1 + ", " + " is/are the input to perform SQLi attack on VSlice!", vslice(conn, var1).next() == false);
 	if(stmt != null)
