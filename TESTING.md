@@ -84,26 +84,28 @@ public class FuzzTest{
 
 How to compile the fuzzer: 
 ```bash
-
 javac -cp .:$(path to/jqf/scripts/classpath.sh) SqlInjectonGenerator.java FuzzTest.java 
 ```
+
 How to run the fuzzer: 
 ```bash
-path to/jqf//bin/jqf-zest -c .:$(path to/jqf/scripts/classpath.sh) FuzzTest fuzz_test_gpatch
+path to/jqf/bin/jqf-zest -c .:$(path to/jqf/scripts/classpath.sh) FuzzTest fuzz_test_gpatch
 ```
-To test the found payload:
+
+To test the found payload if there is one:
 ```bash
-path to/jqf//bin/jqf-repro -c .:$(path to/jqf/scripts/classpath.sh) FuzzTest fuzz_test_gpatch fuzz-results/failures/id..
+path to/jqf/bin/jqf-repro -c .:$(path to/jqf/scripts/classpath.sh) FuzzTest fuzz_test_gpatch fuzz-results/failures/id..
 ```
 
+To test the found payload if there is one:
+```bash
+path to/jqf/bin/jqf-repro -c .:$(path to/jqf/scripts/classpath.sh) FuzzTest fuzz_test_vslice fuzz-results/failures/id..
+```
+You can find DCAFixer generator in `dcafixer/DataSet/SqlInjectonGenerator.java`
 
-path to/jqf//bin/jqf-zest -c .:$(path to/jqf/scripts/classpath.sh) FuzzTest fuzz_test_vslice
-
-To test the found payload:
-path to/jqf//bin/jqf-repro -c .:$(path to/jqf/scripts/classpath.sh) FuzzTest fuzz_test_vslice fuzz-results/failures/[id]
-==============
 
 **Unit testing:**
+
 We can use the test cases to perform unit tests. In these tests, we use a benign valid input and compare the results of both the original vulnerable slice (vslice) and the generated patch (gpatch). If the gpatch behaves differently, it indicates that the SQL command changes introduced errors.
 ```java
 public void unit_test(String var1) throws SQLException, ClassNotFoundException {
