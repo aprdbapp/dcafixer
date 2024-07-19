@@ -10,14 +10,14 @@ https://github.com/rohanpadhye/JQF
 
 VSlice created by DCAFixer:
 ```java
-String sql3= "Select * from ACCOUNTS where name = '" + custname + "';";;//sig: q,s,v
+String sql3= "Select * from ACCOUNTS where name = '" + custname + "';";		
 ResultSet rs3 = stmt.executeQuery(sql3);
 ```
 
 Test case for the VSlice:
 ```java
 public ResultSet vslice(Statement stmt, String custname) {
-	String sql3= "Select * from ACCOUNTS where name = '" + custname + "';";;//sig: q,s,v
+	String sql3= "Select * from ACCOUNTS where name = '" + custname + "';";
 	ResultSet rs3 = stmt.executeQuery(sql3);
 }
 ```
