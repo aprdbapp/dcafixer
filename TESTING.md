@@ -7,22 +7,22 @@ First, you need to download JQF and follow the instructions provided by the deve
 https://github.com/rohanpadhye/JQF
 
 
-## Vulnerable-Slice (VSlice): 
+**Vulnerable-Slice (VSlice):**
 
-**VSlice created by DCAFixer:**
+VSlice created by DCAFixer:
 
 
-**Test case for the VSlice:**
+Test case for the VSlice:
 
-**Fuzzing test case for VSlice:**
+Fuzzing test case for VSlice:
 
 
  
-## Generated Patch (GPatch):
-**GPatch created by DCAFixer:**
+**Generated Patch (GPatch):**
+GPatch created by DCAFixer:
 
-**Test case for the GPatch:**
+Test case for the GPatch:
 
-**Fuzzing test case for GPatch:**
+Fuzzing test case for GPatch:
 
  
