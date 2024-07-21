@@ -9,7 +9,6 @@ To install and set up this prototype, follow these steps:
 1. **Clone the repository**:
     ```bash
     git clone https://github.com/aprdbapp/dcafixer.git
-    cd path_to_dcafixer
     ```
 
 2. **Download the required dependencies**:
