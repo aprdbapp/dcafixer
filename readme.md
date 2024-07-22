@@ -1,8 +1,9 @@
 # DCAFixer
-
-We recommend using Eclipse as it is the IDE we used for developing and testing.
+This prototype is designed to locate and repair SQL injection vulnerabilities and hardcoded credentials in Java client applications. Please follow the instructions below to test the framework.
 
 ## Getting Started
+
+We recommend using Eclipse as it is the IDE we used for developing and testing.
 
 ### 1. Download the Code
 
