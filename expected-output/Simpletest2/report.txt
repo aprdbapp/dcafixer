@@ -1,0 +1,194 @@
+*******************************
+Scanning Simpletest2
+----------------------------
+simpletest2/src/
+Number of files: 2
+Time taken to find files with IPs: 0 milliseconds
+Time taken to find files with IPs: 0 seconds
+Start building the CG .......
+Call graph stats:
+  Nodes: 770
+  Edges: 1587
+  Methods: 669
+  Bytecode Bytes: 41269
+
+Done building the CG .......
+simpletest2/src//QExecute.java
+################## QExecute.java ##################
+Slice: callLines : [13], queryLines: [13]
+Info
+   executeQuery @ stdId @ 13
+   call_lines = [13]
+   stmtVar = stmt
+   arg = 
+   query_lines = [13], query starts @ qlno = 13
+   query = "Select * from " + table + " where stdid<=50;"
+   query_type = BinaryExpr
+   app_conn = 
+   app_rs = rs1
+   app_ps = 
+   app_rs_dt = ResultSet
+ ----------------
+
+Q,s,[t]
+Preferred sol: 2
+SlicesPath: patterns/SQLIV/Slices/vSlices
+Fixed app is Compiled. No Syntax error!
+Found patch at 1 try!
+**** Generated Patch ***
+-13 
++13 ResultSet rs1 = stmt.executeQuery("Select * from " + table.replaceAll("[^a-zA-Z0-9-'_']", "") + " where stdid<=50;");
+=======================
+Vulnerability at line: 13 was patched with No errors!
+================================================================
+Slice: callLines : [27], queryLines: [25]
+--  SLice :
+25 @ 		String sql2= "Select * from STUDENTS where name = '" + stdname + "';";//sig: q,s,v
+27 @ 		ResultSet rs2 = stmt.executeQuery(sql2);
+ ----------------
+
+Info
+   executeQuery @ stdId @ 27
+   call_lines = [27]
+   stmtVar = stmt
+   arg = sql2
+   query_lines = [25], query starts @ qlno = 25
+   query = "Select * from STUDENTS where name = '" + stdname + "';"
+   query_type = BinaryExpr
+   app_conn = 
+   app_rs = rs2
+   app_ps = 
+   app_rs_dt = ResultSet
+ ----------------
+
+Q,s,[v]
+Preferred sol: 1
+SlicesPath: patterns/SQLIV/Slices/vSlices
+Fixed app is Compiled. No Syntax error!
+Found patch at 1 try!
+**** Generated Patch ***
+-25 
++25 String sql2 = "SELECT * FROM STUDENTS WHERE name = ?";
+-27 
++27 PreparedStatement pstmt27 = stmt.getConnection().prepareStatement(sql2);
++27 pstmt27.setObject(1, stdname);;
++27 ResultSet rs2 = pstmt27.executeQuery();
+=======================
+Vulnerability at line: 27 was patched with No errors!
+================================================================
+###############################################################
+Path: simpletest2/src//QExecute.java
+FailedQparser  0
+FailedSlicer   0
+FailedButSigned: 0
+SEC_PS  0
+SEC  0
+SEC_WL  0
+SEC_CONST	0
+V - QV  1
+V - QCT  1
+V - QA  0
+SyntaxE_PS  0
+SyntaxE_EU  0
+Secure: 0
+SQLI Vulnerable: 2
+Conn Vulnerable: 0
+****************************************************************
+
+simpletest2/src//VulExample2.java
+################## VulExample2.java ##################
+Info
+   getConnection @ main @ 16
+   call_lines = [16]
+   app_conn = conn
+   conn_prop= 
+   conn_url_var= DB_URL
+   conn_url_value= "jdbc:mysql://localhost:3306/smallbank?serverTimezone=UTC&useSSL=true"
+   conn_url_value_type= StringLiteralExpr
+   conn_url_ln= 11
+   conn_url_lines= [11]
+   conn_user_var= 
+   conn_user_value= "root"
+   conn_user_value_type= StringLiteralExpr
+   conn_user_ln= 0
+   conn_user_lines= []
+   conn_pass_var= 
+   conn_pass_value= "purdue"
+   conn_pass_value_type= StringLiteralExpr
+   conn_pass_dt= 
+   conn_pass_ln= 0
+   conn_pass_lines= []
+ ----------------
+
+Slice: callLines : [16], credintalLines: [], allLinesNos:[16]
+###############
+P,h,[] @ 16
+Password is hardcoded. This is not secure!
+To solve this issue, use either char[] or JPasswordField to store that password temporarily.
+U,h,[] @ 16
+Username is hardcoded. This is not secure!
+To solve this issue, avoid hardcoding database credentials in your Java code or configuration files. Store them securely, such as in environment variables, encrypted files, or a secure credential management system. Retrieve the credentials at runtime and provide them to the connection establishment code.
+Original code & fixed code have similar errors! No Syntax error!
+Found patch at 1 try!
+**** Generated Patch ***
+-16 
++16 String username_dcafixer = System.getenv("DB_USERNAME"); // You should set an environment variable `export DB_USERNAME=your_username'
++16 String password_dcafixer = System.getenv("DB_PASSWORD"); // You should set an environment variable `export DB_PASSWORD=your_password'
++16 conn = DriverManager.getConnection(DB_URL, username_dcafixer, password_dcafixer);
+=======================
+Conn vulnerability at line: 16 was patched with No errors!
+================================================================
+###############################################################
+Path: simpletest2/src//VulExample2.java
+FailedQparser  0
+FailedSlicer   0
+FailedButSigned: 0
+SEC_PS  0
+SEC  0
+SEC_WL  0
+SEC_CONST	0
+V - QV  0
+V - QCT  0
+V - QA  0
+SyntaxE_PS  0
+SyntaxE_EU  0
+Secure: 0
+SQLI Vulnerable: 0
+Conn Vulnerable: 1
+****************************************************************
+
+************ Simpletest2 Stats ************
+GFailedQparser  0
+GFailedSlicer   0
+GFailedButSigned: 0
+GSEC_PS  0
+GSEC  0
+GSEC_WL  0
+GSEC_CONST	0
+GQV  1
+GQCT  1
+GQA  0
+GSyntaxE_PS  0
+GSyntaxE_EU  0
+Secure: 0
+SQLI Vulnerable: 2
+Conn Vulnerable: 1
+****************************************************************
+
+======== Generated patches stats for Project ( Simpletest2 ) ======== 
+GPatches = 3
+FSGPatches = 2
+FSGPatches_PS = 1
+FSGPatches_WL = 1
+FSGPatches_Conn = 1
+FGPatches = 0
+
+NoGPatches = 0
+NoGPatches_NoSol = 0
+NoGPatches_PS = 0
+NoGPatches_WL = 0
+NoGPatches_Conn = 0
+Avg_time_to_GPatch = 0.515999972820282 sec
+========================================
+Done!
+Time elapsed to locate and fix the vulnerabilities is 1.975 seconds

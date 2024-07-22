@@ -1,0 +1,212 @@
+*******************************
+Scanning Simpletest1
+----------------------------
+simpletest1/src/
+Number of files: 1
+Time taken to find files with IPs: 2 milliseconds
+Time taken to find files with IPs: 0 seconds
+Start building the CG .......
+Call graph stats:
+  Nodes: 767
+  Edges: 1580
+  Methods: 667
+  Bytecode Bytes: 41378
+
+Done building the CG .......
+simpletest1/src//VulExample.java
+################## VulExample.java ##################
+Info
+   getConnection @ main @ 20
+   call_lines = [20]
+   app_conn = conn
+   conn_prop= 
+   conn_url_var= DB_URL
+   conn_url_value= "jdbc:mysql://localhost:3306/smallbank?serverTimezone=UTC&useSSL=true"
+   conn_url_value_type= StringLiteralExpr
+   conn_url_ln= 13
+   conn_url_lines= [13]
+   conn_user_var= USER
+   conn_user_value= "root"
+   conn_user_value_type= StringLiteralExpr
+   conn_user_ln= 14
+   conn_user_lines= [14]
+   conn_pass_var= PASS
+   conn_pass_value= "purdue"
+   conn_pass_value_type= StringLiteralExpr
+   conn_pass_dt= String
+   conn_pass_ln= 15
+   conn_pass_lines= [15]
+ ----------------
+
+Slice: callLines : [20], credintalLines: [14, 15], allLinesNos:[14, 15, 20]
+--  SLice Lines:
+14 @ 		String USER = "root";
+15 @ 		String PASS = "purdue";
+20 @ 			conn = DriverManager.getConnection(DB_URL, USER, PASS);// STEP 3: Open a connection
+ ----------------
+
+###############
+P,B,[] @ 20
+Password is (1) hardcoded and (2) datatype (String). This is not safe! 
+To solve (1): Avoid hardcoding database credentials in your Java code or configuration files. Store them securely, such as in environment variables, encrypted files, or a secure credential management system. Retrieve the credentials at runtime and provide them to the connection establishment code.
+To solve (2): Use either char[] or JPasswordField to store that password temporarily.
+U,h,[] @ 20
+Username is hardcoded. This is not secure!
+To solve this issue, avoid hardcoding database credentials in your Java code or configuration files. Store them securely, such as in environment variables, encrypted files, or a secure credential management system. Retrieve the credentials at runtime and provide them to the connection establishment code.
+Fixed app is Compiled. No Syntax error!
+Found patch at 1 try!
+**** Generated Patch ***
+-14 
++14 String USER;
++14 String PASS="";
++14 char[] PASSXX;
+-15 
+-20 
++20 Scanner scanner = new Scanner(System.in);
++20 USER = scanner.nextLine();
++20 PASSXX = scanner.nextLine().toCharArray();
++20 scanner.close();
++20 conn = DriverManager.getConnection(DB_URL, USER, String.valueOf(PASSXX));
+=======================
+Conn vulnerability at line: 20 was patched with No errors!
+================================================================
+Slice: callLines : [25], queryLines: [25]
+Info
+   executeQuery @ main @ 25
+   call_lines = [25]
+   stmtVar = stmt
+   arg = 
+   query_lines = [25], query starts @ qlno = 25
+   query = "Select * from " + table + " where custid<=10;"
+   query_type = BinaryExpr
+   app_conn = 
+   app_rs = rs1
+   app_ps = 
+   app_rs_dt = ResultSet
+ ----------------
+
+Q,s,[t]
+Preferred sol: 2
+SlicesPath: patterns/SQLIV/Slices/vSlices
+Fixed app is Compiled. No Syntax error!
+Found patch at 1 try!
+**** Generated Patch ***
+-25 
++25 ResultSet rs1 = stmt.executeQuery("Select * from " + table.replaceAll("[^a-zA-Z0-9-'_']", "") + " where custid<=10;");
+=======================
+Vulnerability at line: 25 was patched with No errors!
+================================================================
+Slice: callLines : [36], queryLines: [35]
+--  SLice :
+35 @ 			String sql2= "Select * from ACCOUNTS;";//sig: (q,s,-)
+36 @ 			ResultSet rs2 = stmt.executeQuery(sql2);
+ ----------------
+
+Info
+   executeQuery @ main @ 36
+   call_lines = [36]
+   stmtVar = stmt
+   arg = sql2
+   query_lines = [35], query starts @ qlno = 35
+   query = "Select * from ACCOUNTS;"
+   query_type = StringLiteralExpr
+   app_conn = 
+   app_rs = rs2
+   app_ps = 
+   app_rs_dt = ResultSet
+ ----------------
+
+_,_,[_]
+Preferred sol: 0
+SlicesPath: patterns/SQLIV/Slices/vSlices
+Vulnerability at line: 36 was Not patched!
+================================================================
+Slice: callLines : [48], queryLines: [46]
+--  SLice :
+46 @ 			String sql3= "Select * from ACCOUNTS where name = '" + custname + "';";;//sig: q,s,v
+48 @ 			ResultSet rs3 = stmt.executeQuery(sql3);
+ ----------------
+
+Info
+   executeQuery @ main @ 48
+   call_lines = [48]
+   stmtVar = stmt
+   arg = sql3
+   query_lines = [46], query starts @ qlno = 46
+   query = "Select * from ACCOUNTS where name = '" + custname + "';"
+   query_type = BinaryExpr
+   app_conn = 
+   app_rs = rs3
+   app_ps = 
+   app_rs_dt = ResultSet
+ ----------------
+
+Q,s,[v]
+Preferred sol: 1
+SlicesPath: patterns/SQLIV/Slices/vSlices
+Fixed app is Compiled. No Syntax error!
+Found patch at 1 try!
+**** Generated Patch ***
+-46 
++46 String sql3 = "SELECT * FROM ACCOUNTS WHERE name = ?";
+-48 
++48 PreparedStatement pstmt48 = stmt.getConnection().prepareStatement(sql3);
++48 pstmt48.setObject(1, custname);;
++48 ResultSet rs3 = pstmt48.executeQuery();
+=======================
+Vulnerability at line: 48 was patched with No errors!
+================================================================
+###############################################################
+Path: simpletest1/src//VulExample.java
+FailedQparser  0
+FailedSlicer   0
+FailedButSigned: 0
+SEC_PS  0
+SEC  0
+SEC_WL  0
+SEC_CONST	1
+V - QV  1
+V - QCT  1
+V - QA  0
+SyntaxE_PS  0
+SyntaxE_EU  0
+Secure: 1
+SQLI Vulnerable: 2
+Conn Vulnerable: 1
+****************************************************************
+
+************ Simpletest1 Stats ************
+GFailedQparser  0
+GFailedSlicer   0
+GFailedButSigned: 0
+GSEC_PS  0
+GSEC  0
+GSEC_WL  0
+GSEC_CONST	1
+GQV  1
+GQCT  1
+GQA  0
+GSyntaxE_PS  0
+GSyntaxE_EU  0
+Secure: 1
+SQLI Vulnerable: 2
+Conn Vulnerable: 1
+****************************************************************
+
+======== Generated patches stats for Project ( Simpletest1 ) ======== 
+GPatches = 3
+FSGPatches = 2
+FSGPatches_PS = 1
+FSGPatches_WL = 1
+FSGPatches_Conn = 1
+FGPatches = 0
+
+NoGPatches = 1
+NoGPatches_NoSol = 0
+NoGPatches_PS = 0
+NoGPatches_WL = 0
+NoGPatches_Conn = 0
+Avg_time_to_GPatch = 0.5239999890327454 sec
+========================================
+Done!
+Time elapsed to locate and fix the vulnerabilities is 2.867 seconds
