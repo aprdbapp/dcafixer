@@ -1,46 +1,82 @@
 # DCAFixer
 
-## Introduction
-This prototype is designed to locate and repair SQL injection vulnerabilities and hardcoded credentials in Java client applications. Please follow the instructions below to test the framework.
+We recommend using Eclipse as it is the IDE we used for developing and testing.
 
-## Installation
-To install and set up this prototype, follow these steps:
+## Getting Started
 
-1. **Clone the repository**:
-    ```bash
-    git clone https://github.com/aprdbapp/dcafixer.git
-    ```
+### 1. Download the Code
 
-2. **Download the required dependencies**:
-    You can download their jar files or build the tools using the instructions in their repositories:
-    - [WALA](https://github.com/wala/WALA/blob/master/README.md)
-    - [JSQLParser](https://github.com/JSQLParser/JSqlParser)
-    - [Javaparser](https://github.com/javaparser/javaparser)
-    - [gumtree-spoon-ast-diff](https://github.com/SpoonLabs/gumtree-spoon-ast-diff)
+Download the code using the following command:
 
-## Usage
-To test the prototype to fix an application (Input: Vulnerable project):
-
-1. Build the jar of the project.
-2. Provide the project source code path.
-3. Provide the project jar path.
-4. Provide a name for your project. The system will use this name to create a folder under the `out` directory to store the report.
-
-In the class `src/dcafixer/Main.java`, you can add the following line to start DCAFixer:
-
-```java
-Fixer.start_dcafixer(projectName, projectSrc, projectJar);
+```sh
+git clone https://github.com/aprdbapp/dcafixer.git
 ```
-where:
 
-projectName = The name of the project without spaces. It should be unique; don't name two projects with the same name to avoid mixed results from two projects in the same folder.
+### 2. Open the Project in Eclipse
 
-projectSrc = The path where the project source code is located.
+1. From Eclipse:
+   - Select `File` -> `Open Projects From File System`.
+   - Browse to the place where you downloaded the code in `/path/to/dcafixer`.
+   - Press `Open`, then `Finish`.
 
-projectJar = The path to the project jar file.
+### 3. Add All the Required Dependencies
+
+1. Go to the project in Eclipse and right-click on the project.
+2. Select `Build Path` -> `Configure Build Path`.
+3. In the `Libraries` tab, click on `Modulepath` then press on the right side `Add External JARs` button.
+4. Browse to where you downloaded `dcafixer` to the `lib` folder (`/path/to/dcafixer/lib`).
+5. Select all the dependencies and press `Open`, then `Apply and Close`.
+
+## Running the Examples
+
+Now the system is ready to be used. You can go to the file `/path/to/dcafixer/dcafixer/Main.java`. You will find that the code for two examples is written and you can run it directly.
+
+1. Right-click on `Main.java` and select `Run As` -> `Java Application`.
+
+### Example Descriptions
+
+#### Simpletest1
+
+Each example has a separate folder:
+- `dcafixer/simpletest1`
+- `dcafixer/simpletest2`
+
+Each folder contains the source code, which can be found in:
+- `dcafixer/simpletest1/src`
+- `dcafixer/simpletest2/src`
+
+Their JAR files are also provided to simplify testing the code. You can find the JAR files in:
+- `dcafixer/simpletest1/lib`
+- `dcafixer/simpletest2/lib`
+
+After running `/path/to/dcafixer/dcafixer/Main.java`, the system will create fixed code and generate a report about the vulnerabilities.
+
+For `simpletest1`:
+1. You'll find the original code in `simpletest1/src/VulExample.java` and its fixed copy in `simpletest1/src/VulExample_fixed.java`.
+2. Under `dcafixer/out/dcafixer-report/Simpletest1`, you will find the following files:
+   - `VulExample20_VSlice.java`
+   - `VulExample48_VSlice.java`
+   - `VulExample25_VSlice.java`
+   - `VulExample36_VSlice.java`
+   - `report.txt`
+
+For `simpletest2`:
+1. You'll find the original code in `simpletest2/src/QExecute.java` and its fixed copy in `simpletest2/src/QExecute_fixed.java`.
+2. You'll find the original code in `simpletest2/src/VulExample2.java` and its fixed copy in `simpletest2/src/VulExample2_fixed.java`.
+
+3. Under `dcafixer/out/dcafixer-report/Simpletest2`, you will find the following files:
+   - `QExecute13_VSlice.java`
+   - `VulExample216_VSlice.java`
+   - `QExecute27_VSlice.java`
+   - `report.txt`
+
+## Expected Output
+
+You can find a copy of all expected output from both `simpletest1` and `simpletest2` in the folder `dcafixer/expected-output`, so you can compare the results you got to the expected ones.
+```
+
+Feel free to adjust the file paths and any other details as needed to match your specific project setup.
 
 
-## Output 
-You will find slices of the vulnerabilities and a report of fixed and non-fixed vulnerabilities under the directory `out/dcafixer-report/projectName`. The report file is named `report.txt`.
 
 
