@@ -51,7 +51,9 @@ Their JAR files are also provided to simplify testing the code. You can find the
 
 After running `/path/to/dcafixer/dcafixer/Main.java`, the system will create fixed code and generate a report about the vulnerabilities.
 
-For `simpletest1`:
+## Expected Output
+
+**For `simpletest1`:**
 1. You'll find the original code in `simpletest1/src/VulExample.java` and its fixed copy in `simpletest1/src/VulExample_fixed.java`.
 2. Under `dcafixer/out/dcafixer-report/Simpletest1`, you will find the following files:
    - `VulExample20_VSlice.java`
@@ -60,7 +62,7 @@ For `simpletest1`:
    - `VulExample36_VSlice.java`
    - `report.txt`
 
-For `simpletest2`:
+**For `simpletest2`:**
 1. You'll find the original code in `simpletest2/src/QExecute.java` and its fixed copy in `simpletest2/src/QExecute_fixed.java`.
 2. You'll find the original code in `simpletest2/src/VulExample2.java` and its fixed copy in `simpletest2/src/VulExample2_fixed.java`.
 
@@ -70,13 +72,8 @@ For `simpletest2`:
    - `QExecute27_VSlice.java`
    - `report.txt`
 
-## Expected Output
 
-You can find a copy of all expected output from both `simpletest1` and `simpletest2` in the folder `dcafixer/expected-output`, so you can compare the results you got to the expected ones.
-```
-
-Feel free to adjust the file paths and any other details as needed to match your specific project setup.
-
+**You can find a copy of all expected output from both `simpletest1` and `simpletest2` in the folder `dcafixer/expected-output`, so you can compare the results you got to the expected ones.**
 
 
 
