@@ -29,7 +29,7 @@ git clone https://github.com/aprdbapp/dcafixer.git
 
 ## Running the Examples
 
-Now the system is ready to be used. You can go to the file `/path/to/dcafixer/dcafixer/Main.java`. You will find that the code for two examples is written and you can run it directly.
+Now the system is ready to be used. You can go to the file `/path/to/dcafixer/src/dcafixer/Main.java`. You will find that the code for two examples is written and you can run it directly.
 
 1. Right-click on `Main.java` and select `Run As` -> `Java Application`.
 
@@ -49,12 +49,12 @@ Their JAR files are also provided to simplify testing the code. You can find the
 - `dcafixer/simpletest1/lib`
 - `dcafixer/simpletest2/lib`
 
-After running `/path/to/dcafixer/dcafixer/Main.java`, the system will create fixed code and generate a report about the vulnerabilities.
+After running `/path/to/dcafixer/src/dcafixer/Main.java`, the system will create fixed code and generate a report about the vulnerabilities.
 
 ## Expected Output
 
 **For `simpletest1`:**
-1. You'll find the original code in `simpletest1/src/VulExample.java` and its fixed copy in `simpletest1/src/VulExample_fixed.java`.
+1. You'll find the original code in `dcafixer/simpletest1/src/VulExample.java` and its fixed copy in `dcafixer/simpletest1/src/VulExample_fixed.java`.
 2. Under `dcafixer/out/dcafixer-report/Simpletest1`, you will find the following files:
    - `VulExample20_VSlice.java`
    - `VulExample48_VSlice.java`
@@ -63,8 +63,8 @@ After running `/path/to/dcafixer/dcafixer/Main.java`, the system will create fix
    - `report.txt`
 
 **For `simpletest2`:**
-1. You'll find the original code in `simpletest2/src/QExecute.java` and its fixed copy in `simpletest2/src/QExecute_fixed.java`.
-2. You'll find the original code in `simpletest2/src/VulExample2.java` and its fixed copy in `simpletest2/src/VulExample2_fixed.java`.
+1. You'll find the original code in `dcafixer/simpletest2/src/QExecute.java` and its fixed copy in `dcafixer/simpletest2/src/QExecute_fixed.java`.
+2. You'll find the original code in `dcafixer/simpletest2/src/VulExample2.java` and its fixed copy in `dcafixer/simpletest2/src/VulExample2_fixed.java`.
 
 3. Under `dcafixer/out/dcafixer-report/Simpletest2`, you will find the following files:
    - `QExecute13_VSlice.java`
@@ -75,5 +75,19 @@ After running `/path/to/dcafixer/dcafixer/Main.java`, the system will create fix
 
 **You can find a copy of all expected output from both `simpletest1` and `simpletest2` in the folder `dcafixer/expected-output`, so you can compare the results you got to the expected ones.**
 
+
+You can run your own example by updating the code in `/path/to/dcafixer/src/dcafixer/Main.java`. Simply add the following code:
+
+```java
+Fixer.start_dcafixer(projectName, projectSrc, projectJar);
+```
+
+Where:
+
+- `projectName`: The name of the project without spaces. It should be unique; do not name two projects with the same name to avoid mixed results from two projects in the same folder.
+
+- `projectSrc`: The path where the project source code is located.
+
+- `projectJar`: The path to the project JAR file.
 
 
