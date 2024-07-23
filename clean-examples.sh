@@ -12,7 +12,7 @@ current_directory=$(pwd)
 # Append the string to the current directory
 projectSrc="${current_directory}/simpletest1/src"
 projectName="Simpletest1"
-find ${projectSrc} -type fr -name '*_fixed.java' -exec rm -i {} \;
+find ${projectSrc} -type f -name '*_fixed.java' -exec rm -i {} \;
 rm -r ${current_directory}/out/dcafixer-report/${projectName}
 
 # ================ Example 2
@@ -20,5 +20,5 @@ rm -r ${current_directory}/out/dcafixer-report/${projectName}
  projectSrc="${current_directory}/simpletest2/src"
  projectName="Simpletest2"
 
-find ${projectSrc} -type fr -name '*_fixed.java' -exec rm -i {} \;
+find ${projectSrc} -type f -name '*_fixed.java' -exec rm -i {} \;
 rm -r ${current_directory}/out/dcafixer-report/${projectName}
