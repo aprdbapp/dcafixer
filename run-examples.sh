@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-sh clean-examples.sh
+# sh clean-examples.sh
 
 # Usage: java -jar yourapp.jar <projectSrc> <projectJar> <projectName> <reportDir> <patternsPath>");
 
