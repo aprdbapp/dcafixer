@@ -92,6 +92,5 @@ Where:
 - `projectJar`: The path to the project JAR file.
 
 
-## Note:
-You can test the system using a runnable jar file by following the instructions [HERE](https://github.com/aprdbapp/dcafixer/edit/main/runnablejar.md).
+** You can test the system using a runnable jar file by following the instructions [HERE](https://github.com/aprdbapp/dcafixer/edit/main/runnablejar.md).
 
