@@ -1,6 +1,6 @@
 Here is the revised text with the added step to untar the jar file:
 
-```markdown
+
 The jar file is built using OpenJDK version "21.0.1" (2023-10-17).
 
 To run the jar file:
@@ -28,5 +28,4 @@ You should see the output described in the `README.md` repository. If you want t
     sh clean-examples.sh
     sh run-examples.sh
     ```
-```
 
