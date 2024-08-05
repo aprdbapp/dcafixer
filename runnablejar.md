@@ -1,5 +1,3 @@
-Here is the revised text with the added step to untar the jar file:
-
 
 The jar file is built using OpenJDK version "21.0.1" (2023-10-17).
 
