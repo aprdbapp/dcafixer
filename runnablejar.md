@@ -22,8 +22,7 @@ To run the jar file:
     ```
 
 You should see the output described in the `README.md` repository. If you want to repeat the experiment, remove the files by running `clean-examples.sh`:
-    ```
+    ```sh
     sh clean-examples.sh
     sh run-examples.sh
     ```
-..
