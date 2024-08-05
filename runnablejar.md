@@ -1,6 +1,6 @@
-Here is the revised text with proper grammar and formatting for a Markdown file:
+Here is the revised text with the added step to untar the jar file:
 
-
+```markdown
 The jar file is built using OpenJDK version "21.0.1" (2023-10-17).
 
 To run the jar file:
@@ -10,7 +10,10 @@ To run the jar file:
     git clone https://github.com/aprdbapp/dcafixer.git
     ```
 2. Please download this jar file [HERE](https://drive.google.com/file/d/1VnXIfMKngVhgro62IMoHBopYa2MvZsbM/view?usp=sharing).
-3. Move the jar file to `path/to/dcafixer/build`.
+3. Move the jar file to `path/to/dcafixer/build` and untar the jar file. You can run this command:
+    ```sh
+    tar -xzvf DCAFixer.tar.gz DCAFixer.jar
+    ```
 4. Navigate to the `dcafixer` directory:
     ```sh
     cd /path/to/dcafixer
@@ -25,3 +28,5 @@ You should see the output described in the `README.md` repository. If you want t
     sh clean-examples.sh
     sh run-examples.sh
     ```
+```
+
